@@ -1,0 +1,310 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  width: auto;
+  height: 75px;
+  transition: transform 0.3s ease;
+}
+
+.header-title {
+  display: inline-block;
+  font-size: 24px;
+  color: #000;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+.header-title:hover .logo {
+  transform: scale(1.05);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.header.scrolled .nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.nav-menu li {
+  margin: 0 15px;
+  background: transparent;
+  transition: transform 0.3s;
+}
+
+.nav-menu li a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 15px;
+  position: relative;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #000;
+}
+
+.nav-menu li:hover {
+  transform: scale(1.05);
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* Contact button styling */
+.contact-button {
+  padding: 8px 24px;
+  background: #004287;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+}
+
+.contact-button:hover {
+  background: #002a5c;
+  transform: scale(1.05);
+}
+
+/* Mobile Menu Improvements */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #004287;
+  backdrop-filter: blur(5px);
+  z-index: 99;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile-only link styling */
+.mobile-only-link {
+  position: relative;
+}
+
+.mobile-only-link::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+  width: 50%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  /* Mobile navbar keeps logo, hamburger, and contact button visible */
+  .header {
+    /* Adjusted padding for mobile */
+    justify-content: space-between;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    z-index: 100;
+  }
+
+  .nav-menu ul {
+    padding: 0 !important;
+  }
+
+  .nav-menu li::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+    width: 50%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .nav-menu li {
+    margin: 20px 0;
+    text-align: center;
+    padding: 0;
+    opacity: 0;
+    animation: slideIn 0.5s forwards;
+    animation-delay: calc(0.1s * var(--item-index, 0));
+  }
+
+  .nav-menu li:nth-child(1) {
+    --item-index: 1;
+  }
+  .nav-menu li:nth-child(2) {
+    --item-index: 2;
+  }
+  .nav-menu li:nth-child(3) {
+    --item-index: 3;
+  }
+  .nav-menu li:nth-child(4) {
+    --item-index: 4;
+  }
+
+  .contact-button {
+    display: none;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .nav-menu.active {
+    display: flex;
+    padding: 15% 0;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .nav-menu.active li a {
+    /* Updated link color to white for visibility on dark overlay */
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 15px 20px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .nav-menu.active li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 5px;
+    left: 50%;
+    background-color: #003d82; /* Changed accent color */
+    transition: all 0.3s ease;
+  }
+
+  .nav-menu.active li a:hover::after {
+    width: 60%;
+    left: 20%;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    cursor: pointer;
+    z-index: 101;
+    background-color: transparent;
+    position: absolute;
+    right: 10%;
+    transform: translateX(-50%);
+  }
+
+  .hamburger {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    background-color: transparent;
+  }
+
+  .hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    /* Changed hamburger color to dark for visibility on light background */
+    background-color: #004287;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+    /* Active state uses blue accent color */
+    background-color: #003d82;
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+    /* Active state uses blue accent color */
+    background-color: #003d82;
+  }
+
+  /* Contact button styling for mobile */
+  .contact-button {
+    padding: 6px 16px;
+    font-size: 12px;
+  }
+}
