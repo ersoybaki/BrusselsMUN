@@ -306,22 +306,6 @@ function HomeSection5() {
 
   return (
     <section className="homesection5">
-      {/* Wave Divider */}
-      <div className="homesection5-wave-divider">
-        <svg
-          viewBox="0 0 1440 120"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0 0L1440 0V120C1440 120 1080 60 720 60C360 60 0 120 0 120V0Z"
-            fill="#004287"
-          />
-        </svg>
-      </div>
-
-      {/* Stats Section */}
       <div className="homesection5-stats">
         <div className="homesection5-stats-content">
           <div className="homesection5-stats-left">
