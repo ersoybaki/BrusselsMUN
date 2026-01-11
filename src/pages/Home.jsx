@@ -6,6 +6,8 @@ import HomeSection3 from "../components/Home/homesection3/HomeSection3.jsx";
 import HomeSection4 from "../components/Home/homesection4/HomeSection4.jsx";
 import HomeSection5 from "../components/Home/homesection5/HomeSection5.jsx";
 import HomeSection6 from "../components/Home/homesection6/HomeSection6.jsx";
+import HomeSection7 from "../components/Home/homesection7/HomeSection7.jsx";
+import HomeSection9 from "../components/Home/homesection9/HomeSection9.jsx";
 
 function Home() {
   return (
@@ -17,6 +19,8 @@ function Home() {
       <HomeSection4 />
       <HomeSection5 />
       <HomeSection6 />
+      <HomeSection7 />
+      <HomeSection9 />
     </div>
   );
 }
