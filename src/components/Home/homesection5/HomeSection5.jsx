@@ -333,7 +333,7 @@ function HomeSection5() {
 
         <div className="homesection5-stats-grid">
           <div className="homesection5-stat-item">
-            <div className="homesection5-stat-number red-accent">82%</div>
+            <div className="homesection5-stat-number">82%</div>
             <div className="homesection5-stat-bar red-bar"></div>
             <p className="homesection5-stat-text">
               According to MCC, companies that partner strategically instead of
@@ -363,7 +363,7 @@ function HomeSection5() {
           </div>
 
           <div className="homesection5-stat-item">
-            <div className="homesection5-stat-number red-accent">43%</div>
+            <div className="homesection5-stat-number">43%</div>
             <div className="homesection5-stat-bar red-bar"></div>
             <p className="homesection5-stat-text">
               According to MCC, companies that partner strategically instead of

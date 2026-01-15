@@ -7,7 +7,7 @@
 /* Wave Divider */
 .homesection5-wave-divider {
   width: 100%;
-  height: 120px;
+  height: 90px; /* Reduced from 120px */
   position: relative;
   margin-top: -1px;
 }
@@ -21,45 +21,45 @@
 /* Stats Section */
 .homesection5-stats {
   background-color: #f5f5f5;
-  padding: 0 0 80px;
+  padding: 0 0 60px; /* Reduced from 0 0 80px */
 }
 
 .homesection5-stats-content {
   display: grid;
-  grid-template-columns: 1fr 700px;
-  gap: 120px;
-  max-width: 1400px;
+  grid-template-columns: 1fr 550px; /* Reduced from 1fr 700px */
+  gap: 90px; /* Reduced from 120px */
+  max-width: 1200px; /* Reduced from 1400px */
   margin: 0 auto;
   align-items: center;
 }
 
 .homesection5-stats-left {
-  max-width: 700px;
+  max-width: 600px; /* Reduced from 700px */
 }
 
 .homesection5-stats-label {
   font-family: "Syne", sans-serif;
-  font-size: 14px;
+  font-size: 12px; /* Reduced from 14px */
   font-weight: 700;
   color: #ff2e00;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px; /* Reduced from 2px */
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 12px; /* Reduced from 15px */
 }
 
 .homesection5-stats-title {
   font-family: "Syne", sans-serif;
-  font-size: 42px;
+  font-size: 36px; /* Reduced from 42px */
   font-weight: 700;
   color: #000000;
-  margin: 0 0 25px 0;
+  margin: 0 0 20px 0; /* Reduced from 0 0 25px 0 */
   line-height: 1.2;
 }
 
 .homesection5-stats-description {
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: 14px; /* Reduced from 15px */
   line-height: 1.7;
   color: #333333;
   margin: 0;
@@ -68,7 +68,7 @@
 /* Replace decoration with globe container */
 .homesection5-globe-container {
   width: 100%;
-  height: 700px;
+  height: 550px; /* Reduced from 700px */
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -77,42 +77,45 @@
 .homesection5-stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  max-width: 1400px;
+  gap: 32px; /* Reduced from 40px */
+  max-width: 1200px; /* Reduced from 1400px */
   margin: 0 auto;
 }
 
 .homesection5-stat-item {
   text-align: left;
+  /* Added left border and padding for vertical line effect */
+}
+
+/* Red border variant for first and last stats */
+.homesection5-stat-item.red-border {
+  border-left-color: #ff2e00;
 }
 
 .homesection5-stat-number {
   font-family: "Syne", sans-serif;
-  font-size: 56px;
+  font-size: 44px;
   font-weight: 700;
   color: #000000;
-  margin: 0 0 15px 0;
-  line-height: 1;
+  margin: 0 0 5% 0;
+  line-height: 0.8;
+  border-width: 0 0 0 5px;
+  border-style: solid;
+  border-image-source: linear-gradient(
+    0deg,
+    rgba(255, 46, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-image-slice: 1;
+
+  padding-left: 20px;
 }
 
-.homesection5-stat-number.red-accent {
-  color: #ff2e00;
-}
-
-.homesection5-stat-bar {
-  width: 100%;
-  height: 4px;
-  background-color: #004287;
-  margin-bottom: 20px;
-}
-
-.homesection5-stat-bar.red-bar {
-  background-color: #ff2e00;
-}
+/* Removed horizontal bar styles - no longer needed */
 
 .homesection5-stat-text {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
+  font-size: 12px; /* Reduced from 13px */
   line-height: 1.6;
   color: #666666;
   margin: 0;
@@ -126,22 +129,22 @@
 
   /* Update responsive behavior for globe */
   .homesection5-globe-container {
-    height: 400px;
+    height: 350px; /* Reduced from 400px */
   }
 
   .homesection5-stats-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 24px; /* Reduced from 30px */
   }
 }
 
 @media (max-width: 768px) {
   .homesection5-stats {
-    padding: 60px 20px 80px;
+    padding: 45px 20px 60px; /* Reduced from 60px 20px 80px */
   }
 
   .homesection5-stats-title {
-    font-size: 32px;
+    font-size: 26px; /* Reduced from 32px */
   }
 
   /* Hide globe on mobile */
@@ -151,10 +154,10 @@
 
   .homesection5-stats-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 30px; /* Reduced from 40px */
   }
 
   .homesection5-stat-number {
-    font-size: 48px;
+    font-size: 38px; /* Reduced from 48px */
   }
 }

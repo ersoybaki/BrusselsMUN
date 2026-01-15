@@ -5,6 +5,7 @@ import Logo from "../../assets/images/MUNLogo.png";
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [currentPath, setCurrentPath] = useState("/");
 
   // Mobile detection
   useEffect(() => {
@@ -12,6 +13,11 @@ const Navbar = () => {
     checkMobile();
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  // Track current path for active state
+  useEffect(() => {
+    setCurrentPath(window.location.pathname);
   }, []);
 
   // Lock body scroll on mobile nav open
@@ -24,12 +30,20 @@ const Navbar = () => {
   const closeMenu = () => setClick(false);
   const handleClick = () => setClick(!click);
 
+  // Check if link is active
+  const isActive = (href) => {
+    if (href === "/") {
+      return currentPath === "/";
+    }
+    return currentPath.startsWith(href);
+  };
+
   return (
     <div className={`header ${isMobile ? "mobile" : ""}`}>
       {isMobile ? (
         <>
           <a href="/" className="header-title" onClick={scrollToTop}>
-            <img src={Logo} alt="logo" className="logo" />
+            <img src={Logo || "/placeholder.svg"} alt="logo" className="logo" />
           </a>
 
           <div
@@ -44,7 +58,10 @@ const Navbar = () => {
             </div>
           </div>
 
-          <a href="/contact" className="contact-button">
+          <a
+            href="/contact"
+            className={`contact-button ${isActive("/contact") ? "active" : ""}`}
+          >
             Contact
           </a>
 
@@ -55,6 +72,7 @@ const Navbar = () => {
                 <li className="mobile-only-link">
                   <a
                     href="/"
+                    className={isActive("/") ? "active" : ""}
                     onClick={() => {
                       closeMenu();
                       scrollToTop();
@@ -65,7 +83,8 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    href="/about"
+                    href="/about-us"
+                    className={isActive("/about-us") ? "active" : ""}
                     onClick={() => {
                       closeMenu();
                       scrollToTop();
@@ -77,6 +96,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="/conference-2026"
+                    className={isActive("/conference-2026") ? "active" : ""}
                     onClick={() => {
                       closeMenu();
                       scrollToTop();
@@ -88,6 +108,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="/team"
+                    className={isActive("/team") ? "active" : ""}
                     onClick={() => {
                       closeMenu();
                       scrollToTop();
@@ -104,7 +125,7 @@ const Navbar = () => {
         // Desktop header
         <>
           <a href="/" className="header-title" onClick={scrollToTop}>
-            <img src={Logo} alt="logo" className="logo" />
+            <img src={Logo || "/placeholder.svg"} alt="logo" className="logo" />
           </a>
 
           <ul
@@ -114,6 +135,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/"
+                className={isActive("/") ? "active" : ""}
                 onClick={() => {
                   closeMenu();
                   scrollToTop();
@@ -124,7 +146,8 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/about"
+                href="/about-us"
+                className={isActive("/about-us") ? "active" : ""}
                 onClick={() => {
                   closeMenu();
                   scrollToTop();
@@ -136,6 +159,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/conference-2026"
+                className={isActive("/conference-2026") ? "active" : ""}
                 onClick={() => {
                   closeMenu();
                   scrollToTop();
@@ -147,6 +171,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/team"
+                className={isActive("/team") ? "active" : ""}
                 onClick={() => {
                   closeMenu();
                   scrollToTop();
@@ -157,7 +182,11 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <a href="/contact" className="contact-button" onClick={scrollToTop}>
+          <a
+            href="/contact"
+            className={`contact-button ${isActive("/contact") ? "active" : ""}`}
+            onClick={scrollToTop}
+          >
             Contact
           </a>
         </>

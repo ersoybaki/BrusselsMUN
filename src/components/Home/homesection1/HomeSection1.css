@@ -1,7 +1,7 @@
 .homesection1 {
-  margin-top: 75px;
+  margin-top: 60px; /* Reduced from 75px */
   width: 100%;
-  min-height: 100vh;
+  min-height: 85vh; /* Reduced from 100vh */
   display: flex;
   flex-direction: column;
 }
@@ -10,64 +10,64 @@
   flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: calc(100vh - 80px);
+  min-height: calc(85vh - 60px); /* Reduced from calc(100vh - 80px) */
 }
 
 .homesection1-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 60px 80px;
+  padding: 40px 60px; /* Reduced from 60px 80px */
   background-color: #ffffff;
 }
 
 .homesection1-subtitle {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 12px; /* Reduced from 14px */
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px; /* Reduced from 2px */
   color: #666;
-  margin-bottom: 20px;
+  margin-bottom: 16px; /* Reduced from 20px */
   text-transform: uppercase;
 }
 
 .homesection1-title {
   font-family: "Syne", sans-serif;
-  font-size: 64px;
+  font-size: 48px; /* Reduced from 64px */
   font-weight: 800;
   line-height: 1.1;
   color: #000;
-  margin-bottom: 30px;
+  margin-bottom: 20px; /* Reduced from 30px */
   letter-spacing: -1px;
 }
 
 .homesection1-description {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 16px; /* Reduced from 18px */
   line-height: 1.6;
   color: #333;
-  margin-bottom: 16px;
+  margin-bottom: 12px; /* Reduced from 16px */
 }
 
 .homesection1-location {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 14px; /* Reduced from 16px */
   line-height: 1.6;
   color: #666;
-  margin-bottom: 40px;
+  margin-bottom: 30px; /* Reduced from 40px */
 }
 
 .homesection1-buttons {
   display: flex;
-  gap: 16px;
+  gap: 12px; /* Reduced from 16px */
 }
 
 .homesection1-btn {
   font-family: "Syne", sans-serif;
-  font-size: 14px;
+  font-size: 12px; /* Reduced from 14px */
   font-weight: 700;
   letter-spacing: 1px;
-  padding: 16px 32px;
+  padding: 12px 24px; /* Reduced from 16px 32px */
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
@@ -115,7 +115,7 @@
 
 .homesection1-footer {
   background-color: #004287;
-  padding: 24px 80px;
+  padding: 18px 60px; /* Reduced from 24px 80px */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,12 +125,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 45px; /* Reduced from 60px */
   flex-wrap: wrap;
 }
 
 .homesection1-footer-logos img {
-  height: 40px;
+  height: 32px; /* Reduced from 40px */
   width: auto;
   object-fit: contain;
   filter: brightness(0) invert(1);
@@ -144,38 +144,38 @@
   }
 
   .homesection1-content {
-    padding: 60px 40px;
+    padding: 40px 30px; /* Reduced from 60px 40px */
   }
 
   .homesection1-title {
-    font-size: 48px;
+    font-size: 36px; /* Reduced from 48px */
   }
 
   .homesection1-image {
-    min-height: 400px;
+    min-height: 350px; /* Reduced from 400px */
   }
 
   .homesection1-footer {
-    padding: 24px 40px;
+    padding: 18px 30px; /* Reduced from 24px 40px */
   }
 
   .homesection1-footer-logos {
-    gap: 40px;
+    gap: 30px; /* Reduced from 40px */
   }
 }
 
 @media (max-width: 768px) {
   .homesection1-content {
-    padding: 40px 24px;
+    padding: 30px 20px; /* Reduced from 40px 24px */
   }
 
   .homesection1-title {
-    font-size: 36px;
+    font-size: 28px; /* Reduced from 36px */
   }
 
   .homesection1-description,
   .homesection1-location {
-    font-size: 16px;
+    font-size: 14px; /* Reduced from 16px */
   }
 
   .homesection1-buttons {
@@ -189,18 +189,18 @@
   }
 
   .homesection1-image {
-    min-height: 300px;
+    min-height: 250px; /* Reduced from 300px */
   }
 
   .homesection1-footer {
-    padding: 20px 24px;
+    padding: 16px 20px; /* Reduced from 20px 24px */
   }
 
   .homesection1-footer-logos {
-    gap: 30px;
+    gap: 24px; /* Reduced from 30px */
   }
 
   .homesection1-footer-logos img {
-    height: 32px;
+    height: 28px; /* Reduced from 32px */
   }
 }

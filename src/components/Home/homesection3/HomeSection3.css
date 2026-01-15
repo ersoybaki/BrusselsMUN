@@ -1,50 +1,50 @@
 .homesection3 {
-  padding: 80px 100px;
+  padding: 60px 75px; /* Reduced from 80px 100px */
   background-color: #ffffff;
 }
 
 .homesection3-container {
-  max-width: 1400px;
+  max-width: 1200px; /* Reduced from 1400px */
   margin: 0 auto;
   display: flex;
-  gap: 50px;
+  gap: 40px; /* Reduced from 50px */
   align-items: center;
 }
 
 .homesection3-content {
   flex: 1;
-  max-width: 600px;
+  max-width: 500px; /* Reduced from 600px */
 }
 
 .homesection3-label {
   font-family: "Syne", sans-serif;
-  font-size: 14px;
+  font-size: 12px; /* Reduced from 14px */
   font-weight: 700;
   color: #ff2e00;
   letter-spacing: 1px;
-  margin-bottom: 16px;
+  margin-bottom: 12px; /* Reduced from 16px */
   display: block;
 }
 
 .homesection3-title {
   font-family: "Syne", sans-serif;
-  font-size: 48px;
+  font-size: 36px; /* Reduced from 48px */
   font-weight: 700;
   line-height: 1.2;
   color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 16px; /* Reduced from 20px */
 }
 
 .homesection3-description {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 15px; /* Reduced from 16px */
   line-height: 1.6;
   color: #666666;
-  margin-bottom: 40px;
+  margin-bottom: 30px; /* Reduced from 40px */
 }
 
 .homesection3-accordion {
-  margin-bottom: 40px;
+  margin-bottom: 30px; /* Reduced from 40px */
 }
 
 .accordion-item {
@@ -56,12 +56,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 16px 0; /* Reduced from 20px 0 */
   background: none;
   border: none;
   cursor: pointer;
   font-family: "Syne", sans-serif;
-  font-size: 18px;
+  font-size: 16px; /* Reduced from 18px */
   font-weight: 600;
   color: #000000;
   text-align: left;
@@ -73,7 +73,7 @@
 }
 
 .accordion-icon {
-  font-size: 24px;
+  font-size: 20px; /* Reduced from 24px */
   font-weight: 300;
   color: #000000;
   transition: transform 0.3s ease;
@@ -90,13 +90,15 @@
 }
 
 .accordion-content.active {
-  max-height: 500px;
-  padding-bottom: 20px;
+  max-height: 400px; /* Reduced from 500px */
+  padding-bottom: 16px; /* Reduced from 20px */
+  background-color: #ececec;
+  border-bottom: 1px solid #000000;
 }
 
 .accordion-content p {
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: 14px; /* Reduced from 15px */
   line-height: 1.6;
   color: #666666;
   margin: 0;
@@ -107,10 +109,10 @@
   display: inline-block;
   text-decoration: none;
   font-family: "Syne", sans-serif;
-  font-size: 14px;
+  font-size: 12px; /* Reduced from 14px */
   font-weight: 600;
   letter-spacing: 1px;
-  padding: 14px 32px;
+  padding: 12px 28px; /* Reduced from 14px 32px */
   background-color: transparent;
   color: #000000;
   border: 2px solid #000000;
@@ -145,26 +147,26 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
   .homesection3 {
-    padding: 60px 40px;
+    padding: 45px 30px; /* Reduced from 60px 40px */
   }
 
   .homesection3-container {
-    gap: 60px;
+    gap: 45px; /* Reduced from 60px */
   }
 
   .homesection3-title {
-    font-size: 40px;
+    font-size: 32px; /* Reduced from 40px */
   }
 }
 
 @media (max-width: 768px) {
   .homesection3 {
-    padding: 40px 20px;
+    padding: 30px 20px; /* Reduced from 40px 20px */
   }
 
   .homesection3-container {
     flex-direction: column;
-    gap: 40px;
+    gap: 30px; /* Reduced from 40px */
   }
 
   .homesection3-content {
@@ -172,16 +174,16 @@
   }
 
   .homesection3-title {
-    font-size: 32px;
+    font-size: 26px; /* Reduced from 32px */
   }
 
   .accordion-header {
-    font-size: 16px;
-    padding: 16px 0;
+    font-size: 14px; /* Reduced from 16px */
+    padding: 12px 0; /* Reduced from 16px 0 */
   }
 
   .phone-mockup {
-    max-width: 300px;
+    max-width: 250px; /* Reduced from 300px */
     display: none;
   }
 }

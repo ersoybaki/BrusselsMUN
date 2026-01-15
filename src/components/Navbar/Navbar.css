@@ -69,11 +69,17 @@
   background-color: transparent;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: opacity 0.3s ease;
+  opacity: 0.5;
 }
 
+.nav-menu li a.active {
+  opacity: 1;
+  font-weight: 600;
+}
 .nav-menu li a:hover {
   color: #000;
+  opacity: 0.8;
 }
 
 .nav-menu li:hover {
