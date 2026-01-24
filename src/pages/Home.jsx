@@ -7,7 +7,9 @@ import HomeSection4 from "../components/Home/homesection4/HomeSection4.jsx";
 import HomeSection5 from "../components/Home/homesection5/HomeSection5.jsx";
 import HomeSection6 from "../components/Home/homesection6/HomeSection6.jsx";
 import HomeSection7 from "../components/Home/homesection7/HomeSection7.jsx";
+import HomeSection8 from "../components/Home/homesection8/HomeSection8.jsx";
 import HomeSection9 from "../components/Home/homesection9/HomeSection9.jsx";
+import Footer from "../components/Footer/Footer.jsx";
 
 function Home() {
   return (
@@ -20,7 +22,9 @@ function Home() {
       <HomeSection5 />
       <HomeSection6 />
       <HomeSection7 />
+      <HomeSection8 />
       <HomeSection9 />
+      <Footer />
     </div>
   );
 }

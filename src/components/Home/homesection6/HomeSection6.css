@@ -23,8 +23,8 @@
 }
 
 .homesection6-title {
-  font-family: "Syne", sans-serif;
-  font-size: 42px; /* Reduced from 56px */
+  font-family: "Playfair", sans-serif;
+  font-size: 40px; /* Reduced from 56px */
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 16px; /* Reduced from 20px */
@@ -60,12 +60,13 @@
 }
 
 .homesection6-left-content {
-  padding: 16px 32px; /* Reduced from 20px 40px */
+  padding-left: 0;
+  padding-top: 24px;
 }
 
 .homesection6-card-title {
-  font-family: "Syne", sans-serif;
-  font-size: 26px; /* Reduced from 32px */
+  font-family: "Playfair", sans-serif;
+  font-size: 30px; /* Reduced from 32px */
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 16px; /* Reduced from 20px */
@@ -125,7 +126,7 @@
 }
 
 .homesection6-small-title {
-  font-family: "Syne", sans-serif;
+  font-family: "Playfair", sans-serif;
   font-size: 20px; /* Reduced from 24px */
   font-weight: 700;
   color: #1a1a1a;
@@ -151,11 +152,15 @@
   }
 
   .homesection6-title {
-    font-size: 32px; /* Reduced from 40px */
+    font-size: 36px; /* Reduced from 40px */
   }
 
   .homesection6-grid {
     grid-template-columns: 1fr;
+  }
+
+  .homesection6-right {
+    display: none;
   }
 
   .homesection6-large-image {

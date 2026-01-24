@@ -32,8 +32,8 @@
 }
 
 .homesection1-title {
-  font-family: "Syne", sans-serif;
-  font-size: 48px; /* Reduced from 64px */
+  font-family: "Playfair", sans-serif;
+  font-size: 72px; /* Reduced from 64px */
   font-weight: 800;
   line-height: 1.1;
   color: #000;
@@ -170,7 +170,7 @@
   }
 
   .homesection1-title {
-    font-size: 28px; /* Reduced from 36px */
+    font-size: 36px; /* Reduced from 36px */
   }
 
   .homesection1-description,

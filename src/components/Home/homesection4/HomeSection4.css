@@ -15,8 +15,8 @@
 }
 
 .homesection4-events-title {
-  font-family: "Syne", sans-serif;
-  font-size: 36px; /* Reduced from 48px */
+  font-family: "Playfair", sans-serif;
+  font-size: 40px; /* Reduced from 48px */
   font-weight: 700;
   color: #ffffff;
   margin: 0 0 16px 0; /* Reduced from 0 0 20px 0 */
@@ -42,7 +42,9 @@
 .homesection4-event-card {
   border-radius: 0;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .homesection4-event-card:hover {
@@ -120,6 +122,6 @@
   }
 
   .homesection4-events-title {
-    font-size: 28px; /* Reduced from 36px */
+    font-size: 36px; /* Reduced from 36px */
   }
 }

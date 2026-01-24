@@ -35,6 +35,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Playfair";
+  src: url("/src/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
 #root {
   overflow-x: hidden;
 }

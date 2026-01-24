@@ -40,8 +40,8 @@
 }
 
 .homesection2-heading {
-  font-family: "Syne", sans-serif;
-  font-size: 36px;
+  font-family: "Playfair", sans-serif;
+  font-size: 40px;
   font-weight: 700;
   line-height: 1.2;
   color: #1a1a1a;
@@ -97,7 +97,7 @@
 }
 
 .feature-title {
-  font-family: "Syne", sans-serif;
+  font-family: "Playfair", sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: #1a1a1a;
@@ -141,7 +141,7 @@
   }
 
   .homesection2-heading {
-    font-size: 26px;
+    font-size: 36px;
   }
 
   .homesection2-features {

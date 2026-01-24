@@ -27,8 +27,8 @@
 }
 
 .homesection7-heading {
-  font-family: "Syne", sans-serif;
-  font-size: 36px; /* Reduced from 48px */
+  font-family: "Playfair", sans-serif;
+  font-size: 40px; /* Reduced from 48px */
   font-weight: 700;
   color: #000;
   margin: 0 0 12px 0; /* Reduced from 0 0 16px 0 */
@@ -154,6 +154,11 @@
 @media (max-width: 768px) {
   .homesection7-card {
     width: 18rem; /* Reduced from 20rem */
+    height: 90%;
     padding: 8px 20px; /* Reduced from 10px 24px */
+  }
+
+  .homesection7-heading {
+    font-size: 36px; /* Reduced from 40px */
   }
 }

@@ -1,55 +1,54 @@
 .homesection9 {
-  padding: 60px 20px; /* Reduced from 80px 20px */
+  padding: 60px 20px;
 }
 
 .homesection9-container {
-  max-width: 1000px; /* Reduced from 1200px */
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .homesection9-header {
-  margin-bottom: 45px; /* Reduced from 60px */
+  margin-bottom: 45px;
 }
 
 .homesection9-label {
   font-family: "Syne", sans-serif;
-  font-size: 12px; /* Reduced from 14px */
+  font-size: 12px;
   font-weight: 600;
   color: #ff2e00;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 8px; /* Reduced from 10px */
+  margin-bottom: 8px;
 }
 
 .homesection9-title {
-  font-family: "Syne", sans-serif;
-  font-size: 36px; /* Reduced from 48px */
+  font-family: "Playfair", sans-serif;
+  font-size: 40px;
   font-weight: 700;
   color: #000;
-  margin-bottom: 16px; /* Reduced from 20px */
+  margin-bottom: 16px;
 }
 
 .homesection9-description {
   font-family: "Open Sans", sans-serif;
-  font-size: 15px; /* Reduced from 16px */
+  font-size: 15px;
   line-height: 1.6;
   color: #666;
-  max-width: 700px; /* Reduced from 800px */
+  max-width: 700px;
 }
 
 .homesection9-content {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 45px; /* Reduced from 60px */
+  grid-template-columns: 3fr 2fr;
+  gap: 45px;
   align-items: start;
 }
 
 /* Map Section */
 .homesection9-map-container {
-  grid-column: span 3 / span 3;
-  grid-row: span 3 / span 3;
-  gap: 24px; /* Reduced from 30px */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .homesection9-map-link {
@@ -59,7 +58,7 @@
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
-  height: 650px; /* Reduced from 800px */
+  height: 450px;
 }
 
 .homesection9-map-link:hover {
@@ -68,20 +67,21 @@
 
 .homesection9-map-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
 .homesection9-open-map-btn {
   position: absolute;
-  top: 16px; /* Reduced from 20px */
-  right: 16px; /* Reduced from 20px */
+  top: 16px;
+  right: 16px;
   background-color: #000;
   color: #fff;
   font-family: "Syne", sans-serif;
-  font-size: 11px; /* Reduced from 12px */
+  font-size: 11px;
   font-weight: 600;
-  padding: 8px 16px; /* Reduced from 10px 20px */
+  padding: 8px 16px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -94,23 +94,21 @@
 
 /* Social Media Section */
 .homesection9-social {
-  grid-column: span 3 / span 3;
-  grid-row-start: 4;
-  grid-column-start: 2;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 100%;
-  gap: 16px; /* Reduced from 20px */
-  justify-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10%;
+  margin: 50px auto;
+  justify-content: center;
 }
 
 .homesection9-social-item {
   display: flex;
   align-items: center;
-  gap: 12px; /* Reduced from 15px */
+  gap: 12px;
   text-decoration: none;
   color: #000;
   transition: transform 0.3s ease;
+  min-width: 140px;
 }
 
 .homesection9-social-item:hover {
@@ -118,21 +116,22 @@
 }
 
 .homesection9-social-icon {
-  width: 20px; /* Reduced from 24px */
-  height: 20px; /* Reduced from 24px */
+  width: 20px;
+  height: 20px;
   color: #000;
+  flex-shrink: 0;
 }
 
 .homesection9-social-label {
   font-family: "Open Sans", sans-serif;
-  font-size: 11px; /* Reduced from 12px */
+  font-size: 11px;
   color: #999;
   margin-bottom: 2px;
 }
 
 .homesection9-social-handle {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px; /* Reduced from 14px */
+  font-size: 13px;
   font-weight: 600;
   color: #000;
 }
@@ -140,39 +139,36 @@
 /* Form Section */
 .homesection9-form-container {
   background-color: #fff;
-  padding: 16px; /* Reduced from 20px */
+  padding: 24px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  grid-column: span 2 / span 2;
-  grid-row: span 3 / span 3;
-  grid-column-start: 4;
 }
 
 .homesection9-form-title {
-  font-family: "Syne", sans-serif;
-  font-size: 26px; /* Reduced from 32px */
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
   font-weight: 700;
   color: #000;
-  margin-bottom: 8px; /* Reduced from 10px */
+  margin-bottom: 8px;
 }
 
 .homesection9-form-subtitle {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px; /* Reduced from 14px */
+  font-size: 13px;
   color: #666;
-  margin-bottom: 24px; /* Reduced from 30px */
+  margin-bottom: 24px;
 }
 
 .homesection9-form {
   display: flex;
   flex-direction: column;
-  gap: 16px; /* Reduced from 20px */
+  gap: 16px;
 }
 
 .homesection9-form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px; /* Reduced from 20px */
+  gap: 16px;
 }
 
 .homesection9-form-group {
@@ -182,21 +178,23 @@
 
 .homesection9-form-group label {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px; /* Reduced from 14px */
+  font-size: 13px;
   font-weight: 600;
   color: #000;
-  margin-bottom: 6px; /* Reduced from 8px */
+  margin-bottom: 6px;
 }
 
 .homesection9-form-group input[type="text"],
 .homesection9-form-group input[type="email"],
 .homesection9-form-group textarea {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px; /* Reduced from 14px */
-  padding: 10px 12px; /* Reduced from 12px 15px */
+  font-size: 13px;
+  padding: 10px 12px;
   border: 1px solid #ddd;
   border-radius: 4px;
   transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .homesection9-form-group input[type="text"]:focus,
@@ -214,41 +212,42 @@
 .homesection9-checkbox-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px; /* Reduced from 15px */
+  gap: 12px;
 }
 
 .homesection9-checkbox {
   display: flex;
   align-items: center;
-  gap: 6px; /* Reduced from 8px */
+  gap: 6px;
   cursor: pointer;
 }
 
 .homesection9-checkbox input[type="checkbox"] {
-  width: 16px; /* Reduced from 18px */
-  height: 16px; /* Reduced from 18px */
+  width: 16px;
+  height: 16px;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .homesection9-checkbox span {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px; /* Reduced from 14px */
+  font-size: 13px;
   color: #333;
 }
 
 .homesection9-form-actions {
   display: flex;
   justify-content: flex-end;
-  margin-top: 8px; /* Reduced from 10px */
+  margin-top: 8px;
 }
 
 .homesection9-submit-btn {
   font-family: "Syne", sans-serif;
-  font-size: 12px; /* Reduced from 14px */
+  font-size: 12px;
   font-weight: 600;
   color: #fff;
   background-color: #ff2e00;
-  padding: 12px 32px; /* Reduced from 15px 40px */
+  padding: 12px 32px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -259,48 +258,132 @@
   background-color: #cc2500;
 }
 
-/* Responsive Design */
+/* Tablet Responsive */
 @media (max-width: 968px) {
   .homesection9-content {
     grid-template-columns: 1fr;
-    gap: 30px; /* Reduced from 40px */
+    gap: 30px;
   }
 
   .homesection9-title {
-    font-size: 28px; /* Reduced from 36px */
+    font-size: 32px;
+  }
+
+  .homesection9-map-link {
+    height: 350px;
+  }
+
+  .homesection9-social {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
   .homesection9-form-container {
-    padding: 24px; /* Reduced from 30px */
-  }
-}
-
-@media (max-width: 640px) {
-  .homesection9 {
-    padding: 45px 20px; /* Reduced from 60px 20px */
-  }
-
-  .homesection9-title {
-    font-size: 26px; /* Reduced from 32px */
-  }
-
-  .homesection9-form-row {
-    grid-template-columns: 1fr;
+    padding: 24px;
   }
 
   .homesection9-checkbox-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .homesection9 {
+    padding: 40px 16px;
+  }
+
+  .homesection9-header {
+    margin-bottom: 30px;
+  }
+
+  .homesection9-title {
+    font-size: 36px;
+  }
+
+  .homesection9-description {
+    font-size: 14px;
+  }
+
+  .homesection9-map-link {
+    height: 280px;
+  }
 
   .homesection9-social {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .homesection9-social-item {
+    min-width: unset;
+    margin: 0 auto;
+  }
+
+  .homesection9-social-handle {
+    font-size: 12px;
+  }
+
+  .homesection9-form-container {
+    padding: 20px 16px;
+  }
+
+  .homesection9-form-title {
+    font-size: 22px;
+  }
+
+  .homesection9-form-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .homesection9-checkbox-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .homesection9-checkbox span {
+    font-size: 12px;
+  }
+
+  .homesection9-form-actions {
+    justify-content: stretch;
+  }
+
+  .homesection9-submit-btn {
+    width: 100%;
+    padding: 14px 24px;
+  }
+}
+
+/* Small Mobile Responsive */
+@media (max-width: 400px) {
+  .homesection9 {
+    padding: 30px 12px;
+  }
+
+  .homesection9-title {
+    font-size: 24px;
+  }
+
+  .homesection9-map-link {
+    height: 220px;
+  }
+
+  .homesection9-social {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .homesection9-checkbox-grid {
     grid-template-columns: 1fr;
   }
 
   .homesection9-form-container {
-    padding: 16px; /* Reduced from 20px */
+    padding: 16px 12px;
   }
 
   .homesection9-form-title {
-    font-size: 20px; /* Reduced from 24px */
+    font-size: 20px;
   }
 }
