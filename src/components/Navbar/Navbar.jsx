@@ -107,14 +107,14 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    href="/team"
-                    className={isActive("/team") ? "active" : ""}
+                    href="/media"
+                    className={isActive("/media") ? "active" : ""}
                     onClick={() => {
                       closeMenu();
                       scrollToTop();
                     }}
                   >
-                    Team
+                    Media
                   </a>
                 </li>
               </ul>
@@ -170,14 +170,14 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/team"
-                className={isActive("/team") ? "active" : ""}
+                href="/media"
+                className={isActive("/media") ? "active" : ""}
                 onClick={() => {
                   closeMenu();
                   scrollToTop();
                 }}
               >
-                Team
+                Media
               </a>
             </li>
           </ul>
