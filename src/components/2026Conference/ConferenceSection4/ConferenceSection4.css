@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
+
+.conference-section-4 {
+  padding: 80px 24px;
+  background-color: #ffffff;
+}
+
+.conference-section-4__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.conference-section-4__image-wrapper {
+  flex: 1;
+  min-width: 0;
+}
+
+.conference-section-4__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.conference-section-4__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.conference-section-4__label {
+  font-family: "Syne", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #ff2e00;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.conference-section-4__title {
+  font-family: "Playfair", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0 0 24px 0;
+  line-height: 1.2;
+}
+
+.conference-section-4__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin: 0 0 16px 0;
+}
+
+.conference-section-4__text:last-child {
+  margin-bottom: 0;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .conference-section-4 {
+    padding: 60px 24px;
+  }
+
+  .conference-section-4__container {
+    gap: 40px;
+  }
+
+  .conference-section-4__title {
+    font-size: 36px;
+  }
+
+  .conference-section-4__text {
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .conference-section-4 {
+    padding: 48px 20px;
+  }
+
+  .conference-section-4__container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .conference-section-4__image-wrapper {
+    width: 100%;
+  }
+
+  .conference-section-4__content {
+    width: 100%;
+  }
+
+  .conference-section-4__title {
+    font-size: 32px;
+  }
+
+  .conference-section-4__label {
+    font-size: 12px;
+  }
+}
+
+/* Stats Section */
+.conference-section-4__stats {
+  max-width: 1200px;
+  margin: 80px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 0 24px;
+}
+
+.conference-section-4__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.conference-section-4__stat-accent {
+  width: 30px;
+  height: 3px;
+  background-color: #ff2e00;
+  margin-bottom: 12px;
+}
+
+.conference-section-4__stat-number {
+  font-family: "Playfair", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #004287;
+  line-height: 1.1;
+}
+
+.conference-section-4__stat-label {
+  font-family: "Playfair", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  color: #004287;
+  margin-top: 8px;
+}
+
+/* Stats Tablet */
+@media (max-width: 992px) {
+  .conference-section-4__stats {
+    gap: 48px;
+    margin-top: 60px;
+  }
+
+  .conference-section-4__stat-number {
+    font-size: 40px;
+  }
+
+  .conference-section-4__stat-label {
+    font-size: 14px;
+  }
+}
+
+/* Stats Mobile */
+@media (max-width: 768px) {
+  .conference-section-4__stats {
+    flex-wrap: wrap;
+    gap: 40px 32px;
+    margin-top: 48px;
+  }
+
+  .conference-section-4__stat {
+    flex: 0 0 calc(50% - 16px);
+  }
+
+  .conference-section-4__stat-number {
+    font-size: 36px;
+  }
+
+  .conference-section-4__stat-label {
+    font-size: 13px;
+  }
+}

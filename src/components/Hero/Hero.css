@@ -1,0 +1,75 @@
+.hero-banner {
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+  min-height: var(--hero-min-height, 90dvh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-banner-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.hero-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, var(--hero-overlay-opacity, 0.5));
+  z-index: 2;
+}
+
+.hero-banner-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero-banner-title {
+  font-family: "Playfair", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--hero-title-color, #ffffff);
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Tablet */
+@media (max-width: 968px) {
+  .hero-banner-title {
+    font-size: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .hero-banner-title {
+    font-size: 32px;
+  }
+
+  .hero-banner-content {
+    padding: 30px 16px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 400px) {
+  .hero-banner-title {
+    font-size: 28px;
+  }
+}

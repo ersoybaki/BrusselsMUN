@@ -1,0 +1,100 @@
+.conference-section-1 {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.conference-section-1__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.conference-section-1__label {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #f5f5f5;
+  border-radius: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #666666;
+  text-transform: none;
+  margin-bottom: 30px;
+}
+
+.conference-section-1__heading {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+.conference-section-1__heading em {
+  font-style: italic;
+  color: #004287;
+}
+
+.conference-section-1__content {
+  text-align: left;
+}
+
+.conference-section-1__content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.conference-section-1__content p:last-child {
+  margin-bottom: 0;
+}
+
+.conference-section-1__signature {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 40px;
+}
+
+.conference-section-1__signature-name {
+  font-family: "Arizonia", cursive;
+  font-size: 32px;
+  color: #000;
+  font-weight: 600;
+}
+
+.conference-section-1__signature-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #000;
+  margin-top: 4px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .conference-section-1 {
+    padding: 60px 20px;
+  }
+
+  .conference-section-1__heading {
+    font-size: 28px;
+  }
+
+  .conference-section-1__content p {
+    font-size: 13px;
+  }
+
+  .conference-section-1__signature-name {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .conference-section-1__heading {
+    font-size: 24px;
+  }
+}

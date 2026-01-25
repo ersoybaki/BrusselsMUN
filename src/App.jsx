@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Conference from "./pages/2026Conference";
 import Team from "./pages/Team";
-import Contact from "./pages/Contact";
+
 import "./App.css";
 
 export default function App() {
@@ -12,7 +12,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/2026-conference" element={<Conference />} />
+        <Route path="/conference-2026" element={<Conference />} />
         <Route path="/team" element={<Team />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

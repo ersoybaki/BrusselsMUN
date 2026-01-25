@@ -1,0 +1,94 @@
+.conference-section-3 {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.conference-section-3__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.conference-section-3__card {
+  flex: 1;
+  max-width: 350px;
+  text-align: center;
+}
+
+.conference-section-3__image-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.conference-section-3__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.conference-section-3__title {
+  font-family: "Playfair", serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0 0 16px 0;
+}
+
+.conference-section-3__description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .conference-section-3__container {
+    gap: 30px;
+  }
+
+  .conference-section-3__card {
+    max-width: 280px;
+  }
+
+  .conference-section-3__title {
+    font-size: 18px;
+  }
+
+  .conference-section-3__description {
+    font-size: 13px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .conference-section-3 {
+    padding: 40px 20px;
+  }
+
+  .conference-section-3__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .conference-section-3__card {
+    max-width: 100%;
+  }
+
+  .conference-section-3__title {
+    font-size: 20px;
+  }
+
+  .conference-section-3__description {
+    font-size: 14px;
+  }
+}

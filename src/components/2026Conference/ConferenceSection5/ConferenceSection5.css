@@ -1,0 +1,128 @@
+.conference-section-5 {
+  background-color: #f5f5f3;
+  padding: 60px 24px 80px;
+}
+
+.conference-section-5__header {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.conference-section-5__label {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #666;
+  padding: 6px 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+.conference-section-5__heading {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.conference-section-5__heading em {
+  font-style: italic;
+  color: #004287;
+}
+
+.conference-section-5__subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #555;
+  margin: 0 0 24px 0;
+  line-height: 1.6;
+}
+
+.conference-section-5__button {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+  background-color: #d4a855;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.conference-section-5__button:hover {
+  background-color: #c49a4a;
+}
+
+.conference-section-5__gallery {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.conference-section-5__image-wrapper {
+  flex: 1;
+  max-width: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.conference-section-5__image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .conference-section-5__heading {
+    font-size: 36px;
+  }
+
+  .conference-section-5__gallery {
+    gap: 16px;
+  }
+
+  .conference-section-5__image {
+    height: 240px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .conference-section-5 {
+    padding: 48px 20px 60px;
+  }
+
+  .conference-section-5__heading {
+    font-size: 28px;
+  }
+
+  .conference-section-5__subtitle {
+    font-size: 14px;
+  }
+
+  .conference-section-5__gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .conference-section-5__image-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .conference-section-5__image {
+    height: 220px;
+  }
+}
