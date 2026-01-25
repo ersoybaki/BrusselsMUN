@@ -16,6 +16,16 @@
   flex: 1;
   max-width: 350px;
   text-align: center;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  padding: 10px 12px;
+}
+
+.conference-section-3__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
 .conference-section-3__image-wrapper {
@@ -36,7 +46,7 @@
   font-family: "Playfair", serif;
   font-size: 20px;
   font-weight: 500;
-  color: #1a1a1a;
+  color: #000;
   margin: 0 0 16px 0;
 }
 

@@ -1,4 +1,7 @@
 import "./ConferenceSection5.css";
+import Conference4 from "../../../assets/images/Conference4.png";
+import Conference5 from "../../../assets/images/Conference5.png";
+import Conference6 from "../../../assets/images/Conference6.png";
 
 export default function ConferenceSection5() {
   return (
@@ -12,7 +15,7 @@ export default function ConferenceSection5() {
           Relive the moments that defined the conference. Witness the intensity
           of the debate
         </p>
-        <a href="#" className="conference-section-5__button">
+        <a href="" className="conference-section-5__button">
           Access Google Drive Photos
         </a>
       </div>
@@ -20,21 +23,21 @@ export default function ConferenceSection5() {
       <div className="conference-section-5__gallery">
         <div className="conference-section-5__image-wrapper">
           <img
-            src="/images/conference-presentation.jpg"
+            src={Conference5}
             alt="Conference presentation in lecture hall"
             className="conference-section-5__image"
           />
         </div>
         <div className="conference-section-5__image-wrapper">
           <img
-            src="/images/conference-group-photo.jpg"
+            src={Conference6}
             alt="Group photo with BSOG letters"
             className="conference-section-5__image"
           />
         </div>
         <div className="conference-section-5__image-wrapper">
           <img
-            src="/images/conference-committee.jpg"
+            src={Conference4}
             alt="Committee session with delegates"
             className="conference-section-5__image"
           />

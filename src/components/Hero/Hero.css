@@ -58,6 +58,10 @@
 
 /* Mobile */
 @media (max-width: 640px) {
+  .hero-banner {
+    margin-top: 60px;
+  }
+
   .hero-banner-title {
     font-size: 32px;
   }
