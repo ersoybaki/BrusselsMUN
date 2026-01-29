@@ -1,7 +1,20 @@
+"use client";
+
 import "./HomeSection5.css";
-import { World } from "../../ui/globe.tsx";
+import { lazy, Suspense, useEffect, useState } from "react";
+
+// Dynamically import Globe - only loads when component renders (not on mobile)
+const World = lazy(() =>
+  import("../../ui/globe.tsx").then((mod) => ({ default: mod.World })),
+);
 
 function HomeSection5() {
+  const [isMobile, setIsMobile] = useState(true); // Default true to prevent loading on first render
+
+  useEffect(() => {
+    const checkMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    setIsMobile(checkMobile);
+  }, []);
   const globeConfig = {
     pointSize: 4,
     globeColor: "#062056",
@@ -327,7 +340,13 @@ function HomeSection5() {
           </div>
 
           <div className="homesection5-globe-container">
-            <World data={arcsData} globeConfig={globeConfig} />
+            {!isMobile && (
+              <Suspense
+                fallback={<div className="globe-loading">Loading...</div>}
+              >
+                <World data={arcsData} globeConfig={globeConfig} />
+              </Suspense>
+            )}
           </div>
         </div>
 

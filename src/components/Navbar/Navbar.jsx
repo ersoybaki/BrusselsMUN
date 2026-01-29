@@ -117,6 +117,18 @@ const Navbar = () => {
                     Media
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="/contact"
+                    className={isActive("/contact") ? "active" : ""}
+                    onClick={() => {
+                      closeMenu();
+                      scrollToTop();
+                    }}
+                  >
+                    Contact Us
+                  </a>
+                </li>
               </ul>
             </div>
           )}
@@ -185,7 +197,10 @@ const Navbar = () => {
           <a
             href="/contact"
             className={`contact-button ${isActive("/contact") ? "active" : ""}`}
-            onClick={scrollToTop}
+            onClick={() => {
+              closeMenu();
+              scrollToTop();
+            }}
           >
             Contact
           </a>

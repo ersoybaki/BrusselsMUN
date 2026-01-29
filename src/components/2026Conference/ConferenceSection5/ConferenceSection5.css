@@ -15,7 +15,7 @@
   background-color: #dbdbdb;
   border-radius: 50px;
   font-family: "Open Sans", sans-serif;
-  font-size: 12px;
+  font-size: clamp(11px, 2vw, 12px);
   color: #000;
   text-transform: none;
   margin-bottom: 30px;
@@ -23,7 +23,7 @@
 
 .conference-section-5__heading {
   font-family: "Playfair", sans-serif;
-  font-size: 40px;
+  font-size: clamp(28px, 5vw, 40px);
   font-weight: 500;
   color: #000;
   margin: 0 0 16px 0;
@@ -38,7 +38,7 @@
 
 .conference-section-5__subtitle {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: clamp(14px, 2vw, 16px);
   color: #555;
   margin: 0 0 24px 0;
   line-height: 1.6;
@@ -47,7 +47,7 @@
 .conference-section-5__button {
   display: inline-block;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: clamp(12px, 2vw, 14px);
   font-weight: 500;
   color: #fff;
   background-color: #004287;
@@ -86,10 +86,6 @@
 
 /* Tablet */
 @media (max-width: 992px) {
-  .conference-section-5__heading {
-    font-size: 36px;
-  }
-
   .conference-section-5__gallery {
     gap: 16px;
   }
@@ -103,14 +99,6 @@
 @media (max-width: 768px) {
   .conference-section-5 {
     padding: 48px 20px 60px;
-  }
-
-  .conference-section-5__heading {
-    font-size: 28px;
-  }
-
-  .conference-section-5__subtitle {
-    font-size: 14px;
   }
 
   .conference-section-5__gallery {

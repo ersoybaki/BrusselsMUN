@@ -177,7 +177,7 @@ const HomeSection9 = () => {
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="john.doe@example.com"
+                  placeholder="Email"
                   value={formData.email}
                   onChange={handleInputChange}
                   required

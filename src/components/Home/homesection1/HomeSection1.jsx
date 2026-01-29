@@ -19,13 +19,13 @@ export default function HomeSection1() {
           </p>
           <div className="homesection1-buttons">
             <a
-              href="/apply"
+              href="/contact"
               className="homesection1-btn homesection1-btn-primary"
             >
               APPLY NOW!
             </a>
             <a
-              href="/learn-more"
+              href="/conference-2026"
               className="homesection1-btn homesection1-btn-secondary"
             >
               LEARN MORE

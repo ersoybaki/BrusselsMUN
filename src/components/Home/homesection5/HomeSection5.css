@@ -39,7 +39,7 @@
 
 .homesection5-stats-label {
   font-family: "Syne", sans-serif;
-  font-size: 12px;
+  font-size: clamp(11px, 1.5vw, 12px);
   font-weight: 700;
   color: #ff2e00;
   text-transform: uppercase;
@@ -50,7 +50,7 @@
 
 .homesection5-stats-title {
   font-family: "Playfair", sans-serif;
-  font-size: 40px;
+  font-size: clamp(32px, 5vw, 40px);
   font-weight: 700;
   color: #000000;
   margin: 0 0 20px 0;
@@ -59,7 +59,7 @@
 
 .homesection5-stats-description {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: clamp(13px, 2vw, 14px);
   line-height: 1.7;
   color: #333333;
   margin: 0;
@@ -94,7 +94,7 @@
 
 .homesection5-stat-number {
   font-family: "Playfair", sans-serif;
-  font-size: 44px;
+  font-size: clamp(28px, 5vw, 44px);
   font-weight: 700;
   color: #000000;
   margin: 0 0 15px 0;
@@ -112,7 +112,7 @@
 
 .homesection5-stat-text {
   font-family: "Open Sans", sans-serif;
-  font-size: 12px;
+  font-size: clamp(12px, 2vw, 13px);
   line-height: 1.6;
   color: #666666;
   margin: 0;
@@ -131,16 +131,7 @@
   }
 
   .homesection5-globe-container {
-    width: 400px;
-    height: 400px;
-  }
-
-  .homesection5-stats-title {
-    font-size: 34px;
-  }
-
-  .homesection5-stat-number {
-    font-size: 38px;
+    display: none;
   }
 }
 
@@ -163,23 +154,12 @@
   }
 
   .homesection5-globe-container {
-    width: 100%;
-    max-width: 450px;
-    height: 350px;
-    margin: 0 auto;
-  }
-
-  .homesection5-stats-title {
-    font-size: 32px;
+    display: none;
   }
 
   .homesection5-stats-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-  }
-
-  .homesection5-stat-number {
-    font-size: 36px;
   }
 }
 
@@ -198,25 +178,8 @@
     text-align: left;
   }
 
-  .homesection5-stats-label {
-    font-size: 11px;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-  }
-
-  .homesection5-stats-title {
-    font-size: 36px;
-    margin-bottom: 16px;
-  }
-
-  .homesection5-stats-description {
-    font-size: 13px;
-    line-height: 1.6;
-  }
-
   .homesection5-globe-container {
-    height: 280px;
-    max-width: 100%;
+    display: none;
   }
 
   .homesection5-stats-grid {
@@ -230,13 +193,11 @@
   }
 
   .homesection5-stat-number {
-    font-size: 32px;
     margin-bottom: 12px;
     padding-left: 16px;
   }
 
   .homesection5-stat-text {
-    font-size: 13px;
     padding-left: 21px;
   }
 }
@@ -247,19 +208,7 @@
     padding: 24px 16px;
   }
 
-  .homesection5-stats-title {
-    font-size: 36px;
-  }
-
   .homesection5-globe-container {
-    height: 220px;
-  }
-
-  .homesection5-stat-number {
-    font-size: 28px;
-  }
-
-  .homesection5-stat-text {
-    font-size: 12px;
+    display: none;
   }
 }

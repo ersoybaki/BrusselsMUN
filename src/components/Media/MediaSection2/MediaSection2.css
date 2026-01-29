@@ -31,7 +31,7 @@
 
 .media-section-2__title {
   font-family: "Playfair Display", serif;
-  font-size: 18px;
+  font-size: clamp(16px, 2.5vw, 18px);
   font-weight: 400;
   color: #1a1a1a;
   margin-bottom: 14px;
@@ -43,7 +43,7 @@
 
 .media-section-2__text {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
+  font-size: clamp(12px, 2vw, 13px);
   line-height: 1.7;
   color: #555;
 }
@@ -60,14 +60,6 @@
 
   .media-section-2__card {
     max-width: 280px;
-  }
-
-  .media-section-2__title {
-    font-size: 16px;
-  }
-
-  .media-section-2__text {
-    font-size: 12px;
   }
 }
 
@@ -91,13 +83,7 @@
     margin-bottom: 16px;
   }
 
-  .media-section-2__title {
-    font-size: 17px;
-    margin-bottom: 12px;
-  }
-
   .media-section-2__text {
-    font-size: 13px;
     line-height: 1.6;
   }
 }
@@ -114,13 +100,5 @@
 
   .media-section-2__card {
     max-width: 100%;
-  }
-
-  .media-section-2__title {
-    font-size: 16px;
-  }
-
-  .media-section-2__text {
-    font-size: 12px;
   }
 }

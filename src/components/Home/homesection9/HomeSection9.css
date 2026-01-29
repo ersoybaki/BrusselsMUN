@@ -13,7 +13,7 @@
 
 .homesection9-label {
   font-family: "Syne", sans-serif;
-  font-size: 12px;
+  font-size: clamp(10px, 2vw, 12px);
   font-weight: 600;
   color: #ff2e00;
   text-transform: uppercase;
@@ -23,7 +23,7 @@
 
 .homesection9-title {
   font-family: "Playfair", sans-serif;
-  font-size: 40px;
+  font-size: clamp(24px, 5vw, 40px);
   font-weight: 700;
   color: #000;
   margin-bottom: 16px;
@@ -31,7 +31,7 @@
 
 .homesection9-description {
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: clamp(14px, 2vw, 15px);
   line-height: 1.6;
   color: #666;
   max-width: 700px;
@@ -86,7 +86,7 @@
   background-color: #000;
   color: #fff;
   font-family: "Syne", sans-serif;
-  font-size: 11px;
+  font-size: clamp(10px, 2vw, 11px);
   font-weight: 600;
   padding: 8px 16px;
   border: none;
@@ -131,14 +131,14 @@
 
 .homesection9-social-label {
   font-family: "Open Sans", sans-serif;
-  font-size: 11px;
+  font-size: clamp(10px, 2vw, 11px);
   color: #999;
   margin-bottom: 2px;
 }
 
 .homesection9-social-handle {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
+  font-size: clamp(12px, 2vw, 13px);
   font-weight: 600;
   color: #000;
 }
@@ -153,7 +153,7 @@
 
 .homesection9-form-title {
   font-family: "Open Sans", sans-serif;
-  font-size: 26px;
+  font-size: clamp(20px, 4vw, 26px);
   font-weight: 700;
   color: #000;
   margin-bottom: 8px;
@@ -161,7 +161,7 @@
 
 .homesection9-form-subtitle {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
+  font-size: clamp(12px, 2vw, 13px);
   color: #666;
   margin-bottom: 24px;
 }
@@ -185,7 +185,7 @@
 
 .homesection9-form-group label {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
+  font-size: clamp(12px, 2vw, 13px);
   font-weight: 600;
   color: #000;
   margin-bottom: 6px;
@@ -195,7 +195,7 @@
 .homesection9-form-group input[type="email"],
 .homesection9-form-group textarea {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
+  font-size: clamp(12px, 2vw, 13px);
   padding: 10px 12px;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -238,7 +238,7 @@
 
 .homesection9-checkbox span {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
+  font-size: clamp(12px, 2vw, 13px);
   color: #333;
 }
 
@@ -250,7 +250,7 @@
 
 .homesection9-submit-btn {
   font-family: "Syne", sans-serif;
-  font-size: 12px;
+  font-size: clamp(11px, 2vw, 12px);
   font-weight: 600;
   color: #fff;
   background-color: #ff2e00;
@@ -268,7 +268,7 @@
 .notification-contactus {
   padding: 14px 18px;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: clamp(12px, 2vw, 14px);
   font-weight: 500;
   background-color: #d4edda;
   color: #155724;
@@ -292,10 +292,6 @@
   .homesection9-content {
     grid-template-columns: 1fr;
     gap: 30px;
-  }
-
-  .homesection9-title {
-    font-size: 32px;
   }
 
   .homesection9-map-link {
@@ -327,14 +323,6 @@
     margin-bottom: 30px;
   }
 
-  .homesection9-title {
-    font-size: 36px;
-  }
-
-  .homesection9-description {
-    font-size: 14px;
-  }
-
   .homesection9-map-link {
     height: 280px;
   }
@@ -349,16 +337,8 @@
     margin: 0 auto;
   }
 
-  .homesection9-social-handle {
-    font-size: 12px;
-  }
-
   .homesection9-form-container {
     padding: 20px 16px;
-  }
-
-  .homesection9-form-title {
-    font-size: 22px;
   }
 
   .homesection9-form-row {
@@ -369,10 +349,6 @@
   .homesection9-checkbox-grid {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-  }
-
-  .homesection9-checkbox span {
-    font-size: 12px;
   }
 
   .homesection9-form-actions {
@@ -391,10 +367,6 @@
     padding: 30px 12px;
   }
 
-  .homesection9-title {
-    font-size: 24px;
-  }
-
   .homesection9-map-link {
     height: 220px;
   }
@@ -410,9 +382,5 @@
 
   .homesection9-form-container {
     padding: 16px 12px;
-  }
-
-  .homesection9-form-title {
-    font-size: 20px;
   }
 }

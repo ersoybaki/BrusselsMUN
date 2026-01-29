@@ -44,7 +44,7 @@
 
 .conference-section-3__title {
   font-family: "Playfair", serif;
-  font-size: 20px;
+  font-size: clamp(18px, 4vw, 20px);
   font-weight: 500;
   color: #000;
   margin: 0 0 16px 0;
@@ -52,7 +52,7 @@
 
 .conference-section-3__description {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: clamp(13px, 2vw, 14px);
   font-weight: 400;
   line-height: 1.7;
   color: #4a4a4a;
@@ -67,14 +67,6 @@
 
   .conference-section-3__card {
     max-width: 280px;
-  }
-
-  .conference-section-3__title {
-    font-size: 18px;
-  }
-
-  .conference-section-3__description {
-    font-size: 13px;
   }
 }
 
@@ -92,13 +84,5 @@
 
   .conference-section-3__card {
     max-width: 100%;
-  }
-
-  .conference-section-3__title {
-    font-size: 20px;
-  }
-
-  .conference-section-3__description {
-    font-size: 14px;
   }
 }

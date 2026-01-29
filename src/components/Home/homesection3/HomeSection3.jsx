@@ -70,7 +70,7 @@ const HomeSection3 = () => {
             ))}
           </div>
 
-          <a href="/conference" className="homesection3-learn-more">
+          <a href="/conference-2026" className="homesection3-learn-more">
             LEARN MORE
           </a>
         </div>

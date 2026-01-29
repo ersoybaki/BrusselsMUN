@@ -62,7 +62,9 @@ function HomeSection4() {
         </div>
 
         <div className="homesection4-events-button-wrapper">
-          <button className="homesection4-discover-button">DISCOVER ALL</button>
+          <a href="/conference-2026" className="homesection4-discover-button">
+            DISCOVER ALL
+          </a>
         </div>
       </div>
     </section>

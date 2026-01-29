@@ -18,7 +18,7 @@
 
 .homesection7-label {
   font-family: "Syne", sans-serif;
-  font-size: 12px; /* Reduced from 14px */
+  font-size: clamp(10px, 2vw, 12px);
   font-weight: 600;
   color: #ff2e00;
   text-transform: uppercase;
@@ -28,7 +28,7 @@
 
 .homesection7-heading {
   font-family: "Playfair", sans-serif;
-  font-size: 40px; /* Reduced from 48px */
+  font-size: clamp(32px, 5vw, 40px);
   font-weight: 700;
   color: #000;
   margin: 0 0 12px 0; /* Reduced from 0 0 16px 0 */
@@ -37,7 +37,7 @@
 
 .homesection7-description {
   font-family: "Open Sans", sans-serif;
-  font-size: 15px; /* Reduced from 16px */
+  font-size: clamp(13px, 2vw, 15px);
   font-weight: 300;
   color: #000;
   line-height: 1.6;
@@ -142,13 +142,13 @@
   font-family: "Syne", sans-serif;
   color: #000;
   font-weight: 600;
-  font-size: 13px; /* Reduced from 14px */
+  font-size: clamp(12px, 2vw, 13px);
 }
 
 .homesection7-title {
   font-family: "Open Sans", sans-serif;
   color: #000;
-  font-size: 12px; /* Reduced from 13px */
+  font-size: clamp(11px, 2vw, 12px);
 }
 
 @media (max-width: 768px) {
@@ -156,9 +156,5 @@
     width: 18rem; /* Reduced from 20rem */
     height: 90%;
     padding: 8px 20px; /* Reduced from 10px 24px */
-  }
-
-  .homesection7-heading {
-    font-size: 36px; /* Reduced from 40px */
   }
 }

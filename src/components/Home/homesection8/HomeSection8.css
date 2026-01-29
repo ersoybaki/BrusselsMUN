@@ -19,7 +19,7 @@
 
 .gallery-label {
   font-family: "Syne", sans-serif;
-  font-size: 12px;
+  font-size: clamp(10px, 2vw, 12px);
   font-weight: 600;
   letter-spacing: 2px;
   color: #ff2e00;
@@ -30,7 +30,7 @@
 
 .gallery-title {
   font-family: "Playfair", sans-serif;
-  font-size: 40px;
+  font-size: clamp(32px, 5vw, 40px);
   font-weight: 700;
   color: #000000;
   margin: 0 0 16px 0;
@@ -39,7 +39,7 @@
 
 .gallery-description {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: clamp(13px, 2vw, 14px);
   line-height: 1.7;
   color: #555555;
   margin: 0;
@@ -166,10 +166,6 @@
 @media (max-width: 768px) {
   .gallery-section {
     padding: 40px 16px;
-  }
-
-  .gallery-title {
-    font-size: 36px;
   }
 
   .gallery-item {

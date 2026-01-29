@@ -19,7 +19,7 @@
   background-color: #dbdbdb;
   border-radius: 50px;
   font-family: "Open Sans", sans-serif;
-  font-size: 12px;
+  font-size: clamp(10px, 2vw, 12px);
   color: #000;
   text-transform: none;
   margin-bottom: 30px;
@@ -27,7 +27,7 @@
 
 .conference-section-1__heading {
   font-family: "Playfair", serif;
-  font-size: 40px;
+  font-size: clamp(22px, 5vw, 40px);
   font-weight: 500;
   color: #1a1a1a;
   line-height: 1.3;
@@ -45,7 +45,7 @@
 
 .conference-section-1__content p {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: clamp(12px, 2vw, 14px);
   line-height: 1.8;
   color: #555555;
   margin-bottom: 20px;
@@ -64,14 +64,14 @@
 
 .conference-section-1__signature-name {
   font-family: "Arizonia", cursive;
-  font-size: 32px;
+  font-size: clamp(24px, 4vw, 32px);
   color: #004287;
   font-weight: 600;
 }
 
 .conference-section-1__signature-title {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
+  font-size: clamp(11px, 2vw, 13px);
   color: #666666;
   margin-top: 4px;
 }
@@ -80,10 +80,6 @@
 @media (max-width: 992px) {
   .conference-section-1__container {
     max-width: 700px;
-  }
-
-  .conference-section-1__heading {
-    font-size: 32px;
   }
 }
 
@@ -100,12 +96,10 @@
 
   .conference-section-1__label {
     padding: 6px 16px;
-    font-size: 11px;
     margin-bottom: 24px;
   }
 
   .conference-section-1__heading {
-    font-size: 26px;
     margin-bottom: 24px;
   }
 
@@ -114,7 +108,6 @@
   }
 
   .conference-section-1__content p {
-    font-size: 13px;
     line-height: 1.7;
     margin-bottom: 16px;
   }
@@ -122,14 +115,6 @@
   .conference-section-1__signature {
     margin-top: 32px;
     align-items: center;
-  }
-
-  .conference-section-1__signature-name {
-    font-size: 28px;
-  }
-
-  .conference-section-1__signature-title {
-    font-size: 12px;
   }
 }
 
@@ -141,12 +126,10 @@
 
   .conference-section-1__label {
     padding: 5px 14px;
-    font-size: 10px;
     margin-bottom: 20px;
   }
 
   .conference-section-1__heading {
-    font-size: 22px;
     line-height: 1.4;
     margin-bottom: 20px;
   }
@@ -156,20 +139,11 @@
   }
 
   .conference-section-1__content p {
-    font-size: 12px;
     line-height: 1.6;
     margin-bottom: 14px;
   }
 
   .conference-section-1__signature {
     margin-top: 28px;
-  }
-
-  .conference-section-1__signature-name {
-    font-size: 24px;
-  }
-
-  .conference-section-1__signature-title {
-    font-size: 11px;
   }
 }

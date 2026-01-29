@@ -16,7 +16,7 @@
 
 .homesection4-events-title {
   font-family: "Playfair", sans-serif;
-  font-size: 40px; /* Reduced from 48px */
+  font-size: clamp(32px, 5vw, 40px);
   font-weight: 700;
   color: #ffffff;
   margin: 0 0 16px 0; /* Reduced from 0 0 20px 0 */
@@ -24,7 +24,7 @@
 
 .homesection4-events-subtitle {
   font-family: "Open Sans", sans-serif;
-  font-size: 15px; /* Reduced from 16px */
+  font-size: clamp(13px, 2vw, 15px);
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.85);
   max-width: 700px; /* Reduced from 800px */
@@ -70,7 +70,7 @@
 
 .homesection4-event-title {
   font-family: "Syne", sans-serif;
-  font-size: 16px; /* Reduced from 18px */
+  font-size: clamp(14px, 2.5vw, 16px);
   font-weight: 700;
   color: #fff;
   margin: 0 0 12px 0; /* Reduced from 0 0 15px 0 */
@@ -79,7 +79,7 @@
 
 .homesection4-event-description {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px; /* Reduced from 14px */
+  font-size: clamp(12px, 2vw, 13px);
   line-height: 1.6;
   color: #fff;
   margin: 0;
@@ -91,7 +91,7 @@
 
 .homesection4-discover-button {
   font-family: "Syne", sans-serif;
-  font-size: 12px; /* Reduced from 14px */
+  font-size: clamp(10px, 2vw, 12px);
   font-weight: 600;
   color: #ffffff;
   background-color: transparent;
@@ -101,6 +101,7 @@
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 
 .homesection4-discover-button:hover {
@@ -119,9 +120,5 @@
 @media (max-width: 768px) {
   .homesection4-events {
     padding: 45px 20px 60px; /* Reduced from 60px 20px 80px */
-  }
-
-  .homesection4-events-title {
-    font-size: 36px; /* Reduced from 36px */
   }
 }

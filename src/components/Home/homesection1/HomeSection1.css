@@ -23,7 +23,7 @@
 
 .homesection1-subtitle {
   font-family: "Open Sans", sans-serif;
-  font-size: 12px; /* Reduced from 14px */
+  font-size: clamp(10px, 2vw, 12px);
   font-weight: 600;
   letter-spacing: 1.5px; /* Reduced from 2px */
   color: #666;
@@ -33,7 +33,7 @@
 
 .homesection1-title {
   font-family: "Playfair", sans-serif;
-  font-size: 72px; /* Reduced from 64px */
+  font-size: clamp(36px, 5vw + 10px, 72px);
   font-weight: 800;
   line-height: 1.1;
   color: #000;
@@ -43,7 +43,7 @@
 
 .homesection1-description {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px; /* Reduced from 18px */
+  font-size: clamp(14px, 2vw, 16px);
   line-height: 1.6;
   color: #333;
   margin-bottom: 12px; /* Reduced from 16px */
@@ -51,7 +51,7 @@
 
 .homesection1-location {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px; /* Reduced from 16px */
+  font-size: clamp(12px, 2vw, 14px);
   line-height: 1.6;
   color: #666;
   margin-bottom: 30px; /* Reduced from 40px */
@@ -64,7 +64,7 @@
 
 .homesection1-btn {
   font-family: "Syne", sans-serif;
-  font-size: 12px; /* Reduced from 14px */
+  font-size: clamp(10px, 2vw, 12px);
   font-weight: 700;
   letter-spacing: 1px;
   padding: 12px 24px; /* Reduced from 16px 32px */
@@ -147,10 +147,6 @@
     padding: 40px 30px; /* Reduced from 60px 40px */
   }
 
-  .homesection1-title {
-    font-size: 36px; /* Reduced from 48px */
-  }
-
   .homesection1-image {
     min-height: 350px; /* Reduced from 400px */
   }
@@ -167,15 +163,6 @@
 @media (max-width: 768px) {
   .homesection1-content {
     padding: 30px 20px; /* Reduced from 40px 24px */
-  }
-
-  .homesection1-title {
-    font-size: 36px; /* Reduced from 36px */
-  }
-
-  .homesection1-description,
-  .homesection1-location {
-    font-size: 14px; /* Reduced from 16px */
   }
 
   .homesection1-buttons {
