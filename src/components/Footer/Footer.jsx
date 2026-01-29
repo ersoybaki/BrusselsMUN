@@ -1,10 +1,60 @@
 import "./Footer.css";
 import MUNLogo from "../../assets/images/MUNLogo.png";
+import { useState } from "react";
 
 export default function Footer() {
-  const handleSubmit = (e) => {
+  const [formData, setFormData] = useState({
+    email: "",
+  });
+
+  const [botcheck, setBotcheck] = useState("");
+  const [notification, setNotification] = useState("");
+
+  const handleInputChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Email functionality to be implemented
+
+    // Honeypot check (bots often fill hidden fields)
+    if (botcheck) return;
+
+    try {
+      const formEl = e.currentTarget;
+      const fd = new FormData(formEl);
+
+      fd.set("email", formData.email);
+
+      fd.append("access_key", "84403559-7449-4679-8d7d-902defc44abd");
+
+      fd.append("subject", "New subscription from BrusselsMUN footer");
+
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: fd,
+      });
+      const data = await res.json();
+
+      if (data.success) {
+        setNotification(
+          "You have subscribed successfully! We’ll get back to you shortly.",
+        );
+        // Reset
+        setFormData({ email: "" });
+        setBotcheck("");
+        formEl.reset();
+        setTimeout(() => setNotification(""), 4000);
+      } else {
+        setNotification(data.message || "Submission failed. Please try again.");
+      }
+    } catch (err) {
+      setNotification("Network error. Please try again.");
+    }
   };
 
   return (
@@ -21,9 +71,25 @@ export default function Footer() {
               industry.
             </p>
             <form className="footer-form" onSubmit={handleSubmit}>
+              {/* CHANGE: Honeypot input (keep hidden via CSS) */}
+              <input
+                type="text"
+                name="botcheck"
+                className="hp"
+                tabIndex={-1}
+                autoComplete="off"
+                value={botcheck}
+                onChange={(e) => setBotcheck(e.target.value)}
+              />
               <input
                 type="email"
-                placeholder="Input your email here"
+                name="email"
+                id="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+                autoComplete="off"
+                placeholder="Email"
                 className="footer-input"
               />
               <button type="submit" className="footer-submit">
@@ -43,6 +109,15 @@ export default function Footer() {
                   />
                 </svg>
               </button>
+              {notification && (
+                <div
+                  className="notification-footer"
+                  role="alert"
+                  aria-live="assertive"
+                >
+                  {notification}
+                </div>
+              )}
             </form>
           </div>
 
@@ -64,13 +139,13 @@ export default function Footer() {
                 <a href="/about-us" className="footer-link">
                   About Us
                 </a>
-                <a href="/2026-conference" className="footer-link">
+                <a href="/conference-2026" className="footer-link">
                   2026 Conference
                 </a>
-                <a href="/team" className="footer-link">
-                  Team
+                <a href="/media" className="footer-link">
+                  Media
                 </a>
-                <a href="/contact-us" className="footer-link">
+                <a href="/contact" className="footer-link">
                   Contact Us
                 </a>
               </div>

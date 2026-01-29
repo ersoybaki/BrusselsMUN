@@ -1,7 +1,99 @@
+"use client";
+
 import "./HomeSection9.css";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
+import { useState, useRef } from "react";
+
 import MapImage from "../../../assets/images/Maps.png";
 
 const HomeSection9 = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState("");
+  const [showCaptchaError, setShowCaptchaError] = useState(false);
+  const captchaRef = useRef(null);
+  const [botcheck, setBotcheck] = useState("");
+  const [notification, setNotification] = useState("");
+
+  const handleInputChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
+
+  const onHCaptchaVerify = (token) => {
+    setCaptchaToken(token);
+    setShowCaptchaError(false);
+  };
+  const onHCaptchaExpire = () => setCaptchaToken("");
+  const onHCaptchaError = () => setCaptchaToken("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Honeypot check (bots often fill hidden fields)
+    if (botcheck) return;
+
+    if (!captchaToken) {
+      setShowCaptchaError(true);
+      // attempt to scroll captcha into view for UX
+      setNotification("Please verify the captcha before submitting.");
+      captchaRef.current?.element?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+      return;
+    }
+
+    try {
+      setIsSubmitting(true);
+
+      const formEl = e.currentTarget;
+      const fd = new FormData(formEl);
+
+      fd.set("firstName", formData.firstName);
+      fd.set("lastName", formData.lastName);
+      fd.set("email", formData.email);
+      fd.set("message", formData.message);
+
+      fd.append("access_key", "84403559-7449-4679-8d7d-902defc44abd");
+
+      fd.append("subject", "New message from BrusselsMUN contact form");
+
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: fd,
+      });
+      const data = await res.json();
+
+      if (data.success) {
+        setNotification("Message sent! We’ll get back to you shortly.");
+        // Reset
+        setFormData({ firstName: "", lastName: "", email: "", message: "" });
+        setCaptchaToken("");
+        setShowCaptchaError(false);
+        setBotcheck("");
+        captchaRef.current?.resetCaptcha?.();
+        formEl.reset();
+        setTimeout(() => setNotification(""), 4000);
+      } else {
+        setNotification(data.message || "Submission failed. Please try again.");
+      }
+    } catch (err) {
+      setNotification("Network error. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section className="homesection9">
       <div className="homesection9-container">
@@ -26,7 +118,7 @@ const HomeSection9 = () => {
               className="homesection9-map-link"
             >
               <img
-                src={MapImage}
+                src={MapImage || "/placeholder.svg"}
                 alt="Location Map"
                 className="homesection9-map-image"
               />
@@ -41,7 +133,17 @@ const HomeSection9 = () => {
               Fill up the form and our team will get back to you within 24 hours
             </p>
 
-            <form className="homesection9-form">
+            <form className="homesection9-form" onSubmit={handleSubmit}>
+              {/* CHANGE: Honeypot input (keep hidden via CSS) */}
+              <input
+                type="text"
+                name="botcheck"
+                className="hp"
+                tabIndex={-1}
+                autoComplete="off"
+                value={botcheck}
+                onChange={(e) => setBotcheck(e.target.value)}
+              />
               <div className="homesection9-form-row">
                 <div className="homesection9-form-group">
                   <label htmlFor="firstName">First Name</label>
@@ -49,7 +151,10 @@ const HomeSection9 = () => {
                     type="text"
                     id="firstName"
                     name="firstName"
-                    placeholder="John"
+                    placeholder="First Name"
+                    value={formData.firstName}
+                    onChange={handleInputChange}
+                    required
                   />
                 </div>
                 <div className="homesection9-form-group">
@@ -58,7 +163,10 @@ const HomeSection9 = () => {
                     type="text"
                     id="lastName"
                     name="lastName"
-                    placeholder="Doe"
+                    placeholder="Last Name"
+                    value={formData.lastName}
+                    onChange={handleInputChange}
+                    required
                   />
                 </div>
               </div>
@@ -70,49 +178,10 @@ const HomeSection9 = () => {
                   id="email"
                   name="email"
                   placeholder="john.doe@example.com"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
                 />
-              </div>
-
-              <div className="homesection9-form-group">
-                <label>Subject</label>
-                <div className="homesection9-checkbox-grid">
-                  <label className="homesection9-checkbox">
-                    <input
-                      type="checkbox"
-                      name="subject"
-                      value="illustration"
-                    />
-                    <span>Illustration</span>
-                  </label>
-                  <label className="homesection9-checkbox">
-                    <input type="checkbox" name="subject" value="web-design" />
-                    <span>Web Design</span>
-                  </label>
-                  <label className="homesection9-checkbox">
-                    <input
-                      type="checkbox"
-                      name="subject"
-                      value="mobile-design"
-                    />
-                    <span>Mobile Design</span>
-                  </label>
-                  <label className="homesection9-checkbox">
-                    <input type="checkbox" name="subject" value="development" />
-                    <span>Development</span>
-                  </label>
-                  <label className="homesection9-checkbox">
-                    <input
-                      type="checkbox"
-                      name="subject"
-                      value="motion-graphic"
-                    />
-                    <span>Motion Graphic</span>
-                  </label>
-                  <label className="homesection9-checkbox">
-                    <input type="checkbox" name="subject" value="other" />
-                    <span>Other</span>
-                  </label>
-                </div>
               </div>
 
               <div className="homesection9-form-group">
@@ -122,13 +191,46 @@ const HomeSection9 = () => {
                   name="message"
                   rows="5"
                   placeholder="Write your message in here"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  required
                 ></textarea>
               </div>
 
+              <div className="recaptcha-placeholder" aria-live="polite">
+                <HCaptcha
+                  ref={captchaRef}
+                  sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
+                  reCaptchaCompat={false}
+                  onVerify={onHCaptchaVerify}
+                  onExpire={onHCaptchaExpire}
+                  onError={onHCaptchaError}
+                />
+                {showCaptchaError && (
+                  <p className="captcha-error" role="alert">
+                    Please verify with hCaptcha before submitting.
+                  </p>
+                )}
+              </div>
+
               <div className="homesection9-form-actions">
-                <button type="submit" className="homesection9-submit-btn">
-                  SEND MESSAGE!
+                <button
+                  type="submit"
+                  className="homesection9-submit-btn"
+                  disabled={isSubmitting}
+                  aria-disabled={isSubmitting}
+                >
+                  {isSubmitting ? "SENDING..." : "SUBMIT"}{" "}
                 </button>
+                {notification && (
+                  <div
+                    className="notification-contactus"
+                    role="alert"
+                    aria-live="assertive"
+                  >
+                    {notification}
+                  </div>
+                )}
               </div>
             </form>
           </div>
@@ -201,7 +303,7 @@ const HomeSection9 = () => {
               viewBox="0 0 24 24"
               fill="currentColor"
             >
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
             </svg>
             <div>
               <p className="homesection9-social-label">Follow us</p>
