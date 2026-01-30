@@ -7,9 +7,7 @@ export default function HomeSection1() {
       <div className="homesection1-container">
         <div className="homesection1-content">
           <p className="homesection1-subtitle">STEP INTO DIPLOMACY</p>
-          <h1 className="homesection1-title">
-            Experience Elite European Democracy
-          </h1>
+          <h1 className="homesection1-title">Experience European Firsthand</h1>
           <p className="homesection1-description">
             Join 100+ delegates at Europe's premier Model United Nations
             conference.
@@ -19,13 +17,13 @@ export default function HomeSection1() {
           </p>
           <div className="homesection1-buttons">
             <a
-              href="/contact"
+              href="/conference-2026"
               className="homesection1-btn homesection1-btn-primary"
             >
-              APPLY NOW!
+              2026 CONFERENCE
             </a>
             <a
-              href="/conference-2026"
+              href="/about-us"
               className="homesection1-btn homesection1-btn-secondary"
             >
               LEARN MORE

@@ -63,12 +63,12 @@ export default function Footer() {
         <div className="footer-content">
           {/* Left Section - Newsletter */}
           <div className="footer-newsletter">
-            <h2 className="footer-heading">
-              Let's collaborate with us and get our newsletter
-            </h2>
+            <h2 className="footer-heading">Where Diplomacy Becomes Real.</h2>
             <p className="footer-description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              BrusselsMUN connects student delegates with real institutions and
+              professionals shaping European policy. Hosted at the Brussels
+              School of Governance, we bridge the gap between academic debate
+              and real diplomacy.
             </p>
             <form className="footer-form" onSubmit={handleSubmit}>
               {/* CHANGE: Honeypot input (keep hidden via CSS) */}

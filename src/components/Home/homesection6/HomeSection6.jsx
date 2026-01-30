@@ -28,21 +28,13 @@ const HomeSection6 = () => {
               className="homesection6-large-image"
             />
             <div className="homesection6-left-content">
-              <h3 className="homesection6-card-title">
-                Prestige & Credibility
-              </h3>
+              <h3 className="homesection6-card-title">Global Perspective</h3>
               <p className="homesection6-card-text">
-                This conference helps you explore what global careers actually
-                feel like. The themes, committee formats, and real-world policy
-                challenges give you practical exposure to international
-                relations, law, politics, economics, and more. Most importantly,
-                you'll leave with concrete experiences and examples you can use
-                in interviews and personal statements—what you worked on, how
-                you led, and what results you helped create. Beyond the topic,
-                you practice real working skills: researching fast, speaking
-                clearly, negotiating, and turning debate into a written result.
-                You'll also leave with specific examples you can use in
-                interviews and personal statements.
+                Delegates come from across Europe with different political views
+                and priorities. You'll see how these differences play out in
+                real negotiations. Understanding what shapes each country's
+                position, their history, economy, interests, is what makes you a
+                better diplomat. That is shaped alongside your fellow delegates.
               </p>
               <a href="/contact" className="homesection6-button">
                 GET IN TOUCH!
@@ -60,16 +52,12 @@ const HomeSection6 = () => {
               />
               <div className="homesection6-small-content">
                 <h3 className="homesection6-small-title">
-                  Networking Opportunities
+                  Real-Time Negotiation
                 </h3>
                 <p className="homesection6-small-text">
-                  MUN is one of the fastest ways to meet driven people outside
-                  your usual circle. You'll collaborate with delegates from
-                  different schools and countries, negotiate blocs, and build
-                  relationships through committee sessions and social events.
-                  These connections often become future conference teammates,
-                  study partners, or friends—because you bond while solving
-                  problems together.
+                  Practice the art of coalition-building, compromise, and
+                  persuasion under pressure. You'll navigate competing interests
+                  and find workable solutions in real debates.
                 </p>
               </div>
             </div>
@@ -81,14 +69,13 @@ const HomeSection6 = () => {
                 className="homesection6-small-image"
               />
               <div className="homesection6-small-content">
-                <h3 className="homesection6-small-title">Skill Development</h3>
+                <h3 className="homesection6-small-title">
+                  Research & Preparation
+                </h3>
                 <p className="homesection6-small-text">
-                  You'll improve skills you can use immediately in school and
-                  beyond. Brussels MUN trains you to research efficiently, argue
-                  with clarity, respond confidently in real time, and write
-                  strong policy clauses. You'll also learn how to negotiate,
-                  build consensus, think strategically, and persuade without
-                  "winning at all costs"—the core of effective diplomacy.
+                  Learn to synthesize complex policy briefs and understand
+                  committee backgrounds in days, not weeks. Delegates master
+                  efficient research methods they use long after Brussels.
                 </p>
               </div>
             </div>
@@ -101,15 +88,12 @@ const HomeSection6 = () => {
               />
               <div className="homesection6-small-content">
                 <h3 className="homesection6-small-title">
-                  Career Acceleration
+                  Strategic Communication
                 </h3>
                 <p className="homesection6-small-text">
-                  This conference helps you explore what global careers actually
-                  feel like. The themes, committee formats, and real-world
-                  policy challenges give you practical exposure to international
-                  relations, law, politics, economics, and more. Most
-                  importantly, you'll leave with concrete experiences and
-                  examples you can use in interviews and personal statements.
+                  Craft arguments that land. Write resolutions that matter.
+                  Speak with confidence when stakes feel real. These are skills
+                  that define diplomatic work.
                 </p>
               </div>
             </div>

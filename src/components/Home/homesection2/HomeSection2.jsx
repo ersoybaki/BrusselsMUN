@@ -15,11 +15,9 @@ export default function HomeSection2() {
             Together We're Building Brighter Future For The Next Generation
           </h2>
           <p className="homesection2-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod.
+            BrusselsMUN brings ambitious students from across Europe to a city
+            where diplomacy is lived. Delegates refine their voice, expand their
+            network, and engage with the institutions that shape global policy.
           </p>
 
           <div className="homesection2-features">
@@ -27,7 +25,8 @@ export default function HomeSection2() {
               <div className="feature-number">01</div>
               <h3 className="feature-title">Prestige & Credibility</h3>
               <p className="feature-text">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                Build a conference record that is recognised by universities,
+                employers, and diplomatic institutions.
               </p>
             </div>
 
@@ -35,7 +34,8 @@ export default function HomeSection2() {
               <div className="feature-number">02</div>
               <h3 className="feature-title">Networking Opportunities</h3>
               <p className="feature-text">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                Build lasting relationships with peers and professionals from
+                across the continent.
               </p>
             </div>
 
@@ -43,7 +43,8 @@ export default function HomeSection2() {
               <div className="feature-number">03</div>
               <h3 className="feature-title">Skills Development</h3>
               <p className="feature-text">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                Master negotiation, public speaking, and strategic thinking
+                through hands-on experience.
               </p>
             </div>
 
@@ -51,7 +52,8 @@ export default function HomeSection2() {
               <div className="feature-number">04</div>
               <h3 className="feature-title">Career Acceleration</h3>
               <p className="feature-text">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                Accelerate your professional journey and open doors to
+                internships and career opportunities.
               </p>
             </div>
           </div>

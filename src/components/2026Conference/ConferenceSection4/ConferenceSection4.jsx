@@ -41,7 +41,7 @@ export default function ConferenceSection4() {
         </div>
         <div className="conference-section-4__stat">
           <span className="conference-section-4__stat-accent"></span>
-          <span className="conference-section-4__stat-number">150+</span>
+          <span className="conference-section-4__stat-number">100+</span>
           <span className="conference-section-4__stat-label">Delegates</span>
         </div>
         <div className="conference-section-4__stat">

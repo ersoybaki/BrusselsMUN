@@ -25,9 +25,9 @@ function HomeSection4() {
             <div className="homesection4-event-content">
               <h3 className="homesection4-event-title">MUN BRUSSELS 2026</h3>
               <p className="homesection4-event-description">
-                Engage Model United Nations experts and explore simulated
-                international diplomacy. Learn vital debate, exchange and
-                discoveries to step into the realm of a diplomat.
+                Join us for four days of intensive diplomacy in Europe's
+                diplomatic capital. From February 5–8, you'll debate real policy
+                challenges across eight committees
               </p>
             </div>
           </div>
@@ -37,11 +37,14 @@ function HomeSection4() {
               <img src={Upcoming2} alt="Visit to CNDA" />
             </div>
             <div className="homesection4-event-content">
-              <h3 className="homesection4-event-title">Visit to the CNDA</h3>
+              <h3 className="homesection4-event-title">
+                Visit to the European Parliament
+              </h3>
               <p className="homesection4-event-description">
-                This visit offers students the opportunity to discover the
-                functioning of a real tribunal, a chance to truly understand the
-                legal challenges related to asylum.
+                During the conference, you'll step inside the European
+                Parliament to see how European democracy actually works. This
+                isn't a rushed tour. You'll learn from people who work there,
+                understand the legislative process firsthand.
               </p>
             </div>
           </div>
@@ -53,9 +56,9 @@ function HomeSection4() {
             <div className="homesection4-event-content">
               <h3 className="homesection4-event-title">Embassy Day</h3>
               <p className="homesection4-event-description">
-                Our Embassy Day provides an informative visit to the embassies
-                of various countries networked by providing exchanges and local
-                learnings.
+                We're organising a dedicated Embassy Day where you'll meet
+                diplomats and staff from key missions in Brussels. Hear directly
+                about their work, ask questions about careers in diplomacy.
               </p>
             </div>
           </div>

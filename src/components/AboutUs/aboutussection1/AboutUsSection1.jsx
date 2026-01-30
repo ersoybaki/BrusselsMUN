@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { motion, useMotionValueEvent, useScroll } from "motion/react";
 import "./AboutUsSection1.css";
 import StickyScrollImg1 from "../../../assets/images/StickyScroll1.jpg";
@@ -15,17 +15,17 @@ const content = [
     image: StickyScrollImg1,
   },
   {
-    label: "OUR MISSION",
-    title: "Bridging the Gap",
+    label: "OUR STORY",
+    title: "From Vision to Reality",
     description:
-      "We strive to provide delegates with an authentic experience that goes beyond simulation. By hosting our conference in Brussels, participants gain firsthand exposure to the institutions that shape global policy, creating connections that last a lifetime.",
+      "We began as an ambitious vision that has grown into a conference where 150+ delegates from 35+ countries don't just debate resolutions, they visit the European Parliament, and build networks that shape their futures. ",
     image: StickyScrollImg2,
   },
   {
     label: "OUR VALUES",
-    title: "Excellence in Diplomacy",
+    title: "Where You Belong",
     description:
-      "We believe in fostering critical thinking, effective communication, and collaborative problem-solving. Our conferences challenge delegates to engage with complex global issues while developing the skills needed to become tomorrow's leaders.",
+      "Whether you're passionate about climate policy, human rights, or international security, BrusselsMUN offers the platform, the access, and the community to turn that apassion into impact.",
     image: StickyScrollImg3,
   },
 ];

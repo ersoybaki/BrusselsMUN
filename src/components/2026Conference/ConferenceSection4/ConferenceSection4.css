@@ -43,7 +43,7 @@
   font-family: "Playfair", sans-serif;
   font-size: clamp(32px, 5vw, 40px);
   font-weight: 500;
-  color: #1a1a1a;
+  color: #000;
   margin: 0 0 24px 0;
   line-height: 1.2;
 }
@@ -52,7 +52,7 @@
   font-family: "Open Sans", sans-serif;
   font-size: clamp(14px, 2vw, 15px);
   line-height: 1.7;
-  color: #4a4a4a;
+  color: #000;
   margin: 0 0 16px 0;
 }
 

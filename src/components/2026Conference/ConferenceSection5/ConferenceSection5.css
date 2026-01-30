@@ -39,7 +39,7 @@
 .conference-section-5__subtitle {
   font-family: "Open Sans", sans-serif;
   font-size: clamp(14px, 2vw, 16px);
-  color: #555;
+  color: #000;
   margin: 0 0 24px 0;
   line-height: 1.6;
 }

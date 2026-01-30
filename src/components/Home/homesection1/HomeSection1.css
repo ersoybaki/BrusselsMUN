@@ -22,11 +22,11 @@
 }
 
 .homesection1-subtitle {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Syne", sans-serif;
   font-size: clamp(10px, 2vw, 12px);
   font-weight: 600;
   letter-spacing: 1.5px; /* Reduced from 2px */
-  color: #666;
+  color: #363636;
   margin-bottom: 16px; /* Reduced from 20px */
   text-transform: uppercase;
 }

@@ -132,10 +132,9 @@ export default function HomeSection8() {
           <span className="gallery-label">MEDIA</span>
           <h2 className="gallery-title">Gallery</h2>
           <p className="gallery-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod. Lorem ipsum dolor sit amet,
+            Explore the great moments that shaped the conference rooms and
+            committees. From debates to institutional visits, relive the
+            experiences that define BrusselsMUN.
           </p>
         </div>
 

@@ -14,23 +14,25 @@ export default function ConferenceSection1() {
 
         <div className="conference-section-1__content">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            My Journey started as a high school delegate, struggling with public
+            speaking and confidence. Through dedication and MUN conferences, I
+            transformed. I proved to myself that anyone can become an expert
+            speaker. Today, I'm proud to give you that same opportunity through
+            BrusselsMUN.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliquUt enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea.
+            At BrusselsMUN, you don't just simulate diplomacy, you live it. With
+            our institutional visits, you'll speak with diplomats and
+            ambassadors, visit the institutions you're debating about, and
+            connect with passionate delegates from across Europe. This is where
+            theory becomes reality.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            We host only a few events per year, and spaces are limited. If
+            you're ready to challenge yourself and discover what you're capable
+            of, this is your moment.
           </p>
+          <p>I can't wait to see you in Brussels.</p>
         </div>
 
         <div className="conference-section-1__signature">

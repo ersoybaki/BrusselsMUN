@@ -30,7 +30,7 @@
 }
 
 .values-label {
-  color: #fff;
+  color: #ff2a00;
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -41,7 +41,7 @@
 
 .values-title {
   color: #ffffff;
-  font-family: "Playfair", serif;
+  font-family: "Playfair", sans-serif;
 
   font-size: 2.5rem;
   line-height: 1.2;
@@ -111,7 +111,7 @@
 .card-title {
   color: #000;
   font-family: "Playfair", serif;
-  font-size: 1.375rem;
+  font-size: clamp(1.5rem, 2vw, 1.75rem);
   font-weight: 600;
   margin: 0 0 1rem 0;
   line-height: 1.3;

@@ -327,15 +327,10 @@ function HomeSection5() {
               2025 Conference Impact Overview
             </h2>
             <p className="homesection5-stats-description">
-              MUN is one of the fastest ways to meet driven people outside your
-              usual circle. You'll collaborate with delegates from different
-              schools and countries, negotiate blocs, and build relationships
-              through committee sessions and social events. These connections
-              often become future conference teammates, study partners, or
-              friends—because you bond while solving problems together. You'll
-              improve skills you can use everywhere: think on your feet,
-              research efficiently, argue with clarity, respond confidently in
-              real time, and write strong policy clauses.
+              What happens when you bring 100+ delegates from 35+ countries into
+              eight elite committees, DISEC, NATO, Crisis Management, UNHCR, EU
+              Council. Giving each delegate direct access to Europe's
+              institutions. This is BrusselsMUN.
             </p>
           </div>
 
@@ -352,42 +347,40 @@ function HomeSection5() {
 
         <div className="homesection5-stats-grid">
           <div className="homesection5-stat-item">
-            <div className="homesection5-stat-number">82%</div>
+            <div className="homesection5-stat-number">100+</div>
             <div className="homesection5-stat-bar red-bar"></div>
             <p className="homesection5-stat-text">
-              According to MCC, companies that partner strategically instead of
-              outsourcing mechanically achieve a 43% point performance edge —
-              because growth is built, not bought.
+              Delegates from across Europe, committed to serious diplomatic
+              engagement and real policy debate.
             </p>
           </div>
 
           <div className="homesection5-stat-item">
-            <div className="homesection5-stat-number">28%</div>
+            <div className="homesection5-stat-number">35</div>
             <div className="homesection5-stat-bar"></div>
             <p className="homesection5-stat-text">
-              According to MCC, companies that partner strategically instead of
-              outsourcing mechanically achieve a 43% point performance edge —
-              because growth is built, not bought.
+              Countries represented, creating genuine international dialogue and
+              cross-cultural understanding at every level.
             </p>
           </div>
 
           <div className="homesection5-stat-item">
-            <div className="homesection5-stat-number">68%</div>
+            <div className="homesection5-stat-number">8</div>
             <div className="homesection5-stat-bar"></div>
             <p className="homesection5-stat-text">
-              According to MCC, companies that partner strategically instead of
-              outsourcing mechanically achieve a 43% point performance edge —
-              because growth is built, not bought.
+              Including DISEC, NATO, Crisis Management, UNHCR, EU Council, and
+              more. Each committee tackles real policy challenges that shape
+              European and global affairs.
             </p>
           </div>
 
           <div className="homesection5-stat-item">
-            <div className="homesection5-stat-number">43%</div>
+            <div className="homesection5-stat-number">3</div>
             <div className="homesection5-stat-bar red-bar"></div>
             <p className="homesection5-stat-text">
-              According to MCC, companies that partner strategically instead of
-              outsourcing mechanically achieve a 43% point performance edge —
-              because growth is built, not bought.
+              Institutional visits during the conference schedule includes the
+              European Parliament, Belgian Permanent Representative to the EU
+              and UN House.
             </p>
           </div>
         </div>

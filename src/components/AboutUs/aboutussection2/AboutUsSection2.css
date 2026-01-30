@@ -26,6 +26,13 @@
   letter-spacing: 0.01em;
 }
 
+.quote-highlight {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 30px;
+  color: #0047ab;
+}
+
 .quote-author {
   display: flex;
   align-items: center;

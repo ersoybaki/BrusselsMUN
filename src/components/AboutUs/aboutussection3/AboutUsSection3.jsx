@@ -19,7 +19,7 @@ const valuesData = [
     number: 3,
     title: "Bridging Perspectives",
     description:
-      "Creating a neutral ground where diverse backgrounds converge to solve complex international crises through consensus and collaboration.",
+      "We create space where diverse backgrounds converge to solve complex international challenges. Different countries, different views, different experiences, that's where real understanding happens.",
   },
 ];
 
@@ -37,10 +37,8 @@ export default function AboutUsSection3() {
               The Best For Future
             </h2>
             <p className="values-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod.
+              BrusselsMUN is built on four core commitments. Everything we do
+              comes back to these principles.
             </p>
           </div>
 

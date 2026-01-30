@@ -8,8 +8,10 @@ export default function AboutUsSection2() {
     <section className="quote-section">
       <div className="quote-container">
         <blockquote className="quote-text">
-          "Great outcomes don't happen by chance. They're built through vision,
-          execution, and commitment to continuous improvement."
+          "We didn't create BrusselsMUN to simulate diplomacy. We created it to{" "}
+          <span className="quote-highlight">live</span> it. To connect driven
+          students with the institutions and professionals shaping our world.
+          That's the difference."
         </blockquote>
 
         <div className="quote-author">
