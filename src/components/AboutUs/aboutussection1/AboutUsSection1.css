@@ -1,0 +1,143 @@
+/* About Us Sticky Scroll Styles */
+
+.about-section {
+  width: 100%;
+  background-color: #fff;
+  padding: 4rem 0;
+}
+
+.scroll-container {
+  height: 40rem;
+  overflow-y: auto;
+  position: relative;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+
+  padding: 2rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.content-item {
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.content-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ff2e00;
+  font-family: "Syne", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.content-title {
+  font-family: "Playfair", serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: italic;
+  color: #000;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.content-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #000;
+  max-width: 600px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.scroll-spacer {
+  height: 8rem;
+}
+
+.sticky-image-container {
+  position: sticky;
+  top: 5rem;
+  flex: 1;
+  max-width: 550px;
+  height: fit-content;
+  align-self: flex-start;
+}
+
+.image-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.sticky-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .content-wrapper {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .content-title {
+    font-size: 2rem;
+  }
+
+  .sticky-image-container {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column-reverse;
+    padding: 1.5rem;
+  }
+
+  .text-content {
+    max-width: 100%;
+  }
+
+  .content-item {
+    min-height: auto;
+    padding: 1.5rem 0;
+  }
+
+  .content-title {
+    font-size: 1.75rem;
+  }
+
+  .sticky-image-container {
+    position: relative;
+    top: 0;
+    max-width: 100%;
+  }
+
+  .scroll-spacer {
+    height: 5rem;
+  }
+}

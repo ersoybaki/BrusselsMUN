@@ -1,0 +1,144 @@
+.about-hero {
+  background-color: #fff;
+  padding: 80px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.about-hero-container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.about-hero-subtitle {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+}
+
+.about-hero-title {
+  font-family: "Playfair", serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.2;
+  margin: 0;
+  min-height: 60px;
+}
+
+.about-hero-title .word {
+  display: inline;
+}
+
+.about-hero-title .word.highlight {
+  color: #004287;
+  font-style: italic;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+.about-hero-title .cursor {
+  color: #004287;
+  font-weight: 300;
+  margin-left: 2px;
+  animation: none;
+}
+
+.about-hero-title .cursor.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.about-hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  background-color: #004287;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 50px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+}
+
+.about-hero-button:hover {
+  background-color: #003366;
+  transform: translateY(-2px);
+}
+
+.about-hero-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 60px 20px;
+    min-height: 300px;
+  }
+
+  .about-hero-container {
+    gap: 24px;
+  }
+
+  .about-hero-subtitle {
+    font-size: 13px;
+  }
+
+  .about-hero-title {
+    font-size: 32px;
+    min-height: 44px;
+  }
+
+  .about-hero-button {
+    padding: 10px 28px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 48px 16px;
+    min-height: 260px;
+  }
+
+  .about-hero-title {
+    font-size: 26px;
+    min-height: 36px;
+  }
+
+  .about-hero-subtitle {
+    font-size: 12px;
+  }
+
+  .about-hero-button {
+    padding: 10px 24px;
+    font-size: 12px;
+  }
+}
