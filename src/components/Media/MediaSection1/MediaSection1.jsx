@@ -1,77 +1,76 @@
 import React from "react";
 import "./MediaSection1.css";
 
-const testimonials = [
+// Replace these with your actual image URLs
+const images = [
   {
-    name: "John",
-    handle: "@john",
-    text: "I'm at a loss for words. This is amazing. I love it.",
-    gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=300&fit=crop",
+    alt: "Conference moment 1",
   },
   {
-    name: "Jack",
-    handle: "@jack",
-    text: "I've never seen anything like this before. It's amazing. I love it.",
-    gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+    src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=400&h=300&fit=crop",
+    alt: "Conference moment 2",
   },
   {
-    name: "Jill",
-    handle: "@jill",
-    text: "I don't know what to say. I'm speechless. This is amazing.",
-    gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+    src: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=400&h=300&fit=crop",
+    alt: "Conference moment 3",
   },
   {
-    name: "John",
-    handle: "@john",
-    text: "I'm at a loss for words. This is amazing. I love it.",
-    gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+    src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&h=300&fit=crop",
+    alt: "Conference moment 4",
   },
   {
-    name: "Jack",
-    handle: "@jack",
-    text: "I've never seen anything like this before. It's amazing. I love it.",
-    gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
+    src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=400&h=300&fit=crop",
+    alt: "Conference moment 5",
   },
   {
-    name: "Jill",
-    handle: "@jill",
-    text: "I don't know what to say. I'm speechless. This is amazing.",
-    gradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
+    src: "https://images.unsplash.com/photo-1560439514-4e9645039924?w=400&h=300&fit=crop",
+    alt: "Conference moment 6",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&h=300&fit=crop",
+    alt: "Conference moment 7",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=400&h=300&fit=crop",
+    alt: "Conference moment 8",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop",
+    alt: "Conference moment 9",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&h=300&fit=crop",
+    alt: "Conference moment 10",
   },
 ];
 
-const TestimonialCard = ({ name, handle, text, gradient }) => (
-  <div className="testimonial-card">
-    <div className="testimonial-header">
-      <div className="testimonial-avatar" style={{ background: gradient }} />
-      <div className="testimonial-info">
-        <span className="testimonial-name">{name}</span>
-        <span className="testimonial-handle">{handle}</span>
-      </div>
-    </div>
-    <p className="testimonial-text">{text}</p>
+const ImageCard = ({ src, alt }) => (
+  <div className="image-card">
+    <img src={src || "/placeholder.svg"} alt={alt} loading="lazy" />
   </div>
 );
 
-const MarqueeColumn = ({ testimonials, duration, reverse = false }) => (
+const MarqueeColumn = ({ images, duration, reverse = false }) => (
   <div className="marquee-column">
     <div
       className={`marquee-content ${reverse ? "marquee-reverse" : ""}`}
       style={{ "--duration": `${duration}s` }}
     >
-      {[...testimonials, ...testimonials].map((testimonial, index) => (
-        <TestimonialCard key={index} {...testimonial} />
+      {[...images, ...images].map((image, index) => (
+        <ImageCard key={index} {...image} />
       ))}
     </div>
   </div>
 );
 
 const MediaSection1 = () => {
-  const column1 = [testimonials[0], testimonials[1], testimonials[2]];
-  const column2 = [testimonials[3], testimonials[4], testimonials[5]];
-  const column3 = [testimonials[1], testimonials[3], testimonials[0]];
-  const column4 = [testimonials[2], testimonials[5], testimonials[4]];
-  const column5 = [testimonials[4], testimonials[0], testimonials[3]];
+  const column1 = [images[0], images[1], images[2]];
+  const column2 = [images[3], images[4], images[5]];
+  const column3 = [images[6], images[7], images[0]];
+  const column4 = [images[1], images[3], images[5]];
+  const column5 = [images[2], images[4], images[6]];
+  const column6 = [images[7], images[8], images[9]];
 
   return (
     <section className="media-section">
@@ -93,14 +92,15 @@ const MediaSection1 = () => {
       <div className="marquee-outer">
         <div className="marquee-container">
           <div className="marquee-wrapper">
-            <MarqueeColumn testimonials={column1} duration={25} />
-            <MarqueeColumn testimonials={column2} duration={30} reverse />
-            <MarqueeColumn testimonials={column3} duration={28} />
-            <MarqueeColumn testimonials={column4} duration={32} reverse />
-            <MarqueeColumn testimonials={column5} duration={26} />
+            <MarqueeColumn images={column1} duration={25} />
+            <MarqueeColumn images={column2} duration={30} reverse />
+            <MarqueeColumn images={column3} duration={28} />
+            <MarqueeColumn images={column4} duration={32} reverse />
+            <MarqueeColumn images={column5} duration={26} />
+            <MarqueeColumn images={column6} duration={29} reverse />
           </div>
-          <div className="marquee-fade marquee-fade-top" />
-          <div className="marquee-fade marquee-fade-bottom" />
+          {/* <div className="marquee-fade marquee-fade-top" />
+          <div className="marquee-fade marquee-fade-bottom" /> */}
         </div>
       </div>
     </section>

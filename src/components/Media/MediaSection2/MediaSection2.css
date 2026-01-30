@@ -30,10 +30,10 @@
 }
 
 .media-section-2__title {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair", serif;
   font-size: clamp(16px, 2.5vw, 18px);
   font-weight: 400;
-  color: #1a1a1a;
+  color: #000;
   margin-bottom: 14px;
 }
 
@@ -92,6 +92,7 @@
 @media (max-width: 480px) {
   .media-section-2 {
     padding: 40px 16px;
+    margin-top: -20%;
   }
 
   .media-section-2__container {
