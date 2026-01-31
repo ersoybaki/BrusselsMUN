@@ -1,39 +1,13 @@
 import { useState, useRef, useEffect } from "react";
 import "./HomeSection8.css";
-import Img1 from "../../../assets/images/Section6Img1.png";
 
-const galleryImages = [
-  {
-    id: 1,
-    src: Img1,
-    alt: "Conference presentation",
-  },
-  {
-    id: 2,
-    src: Img1,
-    alt: "International event",
-  },
-  {
-    id: 3,
-    src: Img1,
-    alt: "Award ceremony",
-  },
-  {
-    id: 4,
-    src: Img1,
-    alt: "Student presentation",
-  },
-  {
-    id: 5,
-    src: Img1,
-    alt: "Student presentation",
-  },
-  {
-    id: 6,
-    src: Img1,
-    alt: "Celebration photo",
-  },
-];
+const req = require.context("../../../assets/images/Marquee", false, /\.jpg$/);
+
+const galleryImages = Array.from({ length: 25 }, (_, i) => ({
+  id: i + 1,
+  src: req(`./marquee${i + 1}.jpg`),
+  alt: `Gallery image ${i + 1}`,
+}));
 
 export default function HomeSection8() {
   const [activeIndex, setActiveIndex] = useState(2);

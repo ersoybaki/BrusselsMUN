@@ -2,49 +2,13 @@ import React from "react";
 import "./MediaSection1.css";
 
 // Replace these with your actual image URLs
-const images = [
-  {
-    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=300&fit=crop",
-    alt: "Conference moment 1",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=400&h=300&fit=crop",
-    alt: "Conference moment 2",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=400&h=300&fit=crop",
-    alt: "Conference moment 3",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&h=300&fit=crop",
-    alt: "Conference moment 4",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=400&h=300&fit=crop",
-    alt: "Conference moment 5",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1560439514-4e9645039924?w=400&h=300&fit=crop",
-    alt: "Conference moment 6",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&h=300&fit=crop",
-    alt: "Conference moment 7",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=400&h=300&fit=crop",
-    alt: "Conference moment 8",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop",
-    alt: "Conference moment 9",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&h=300&fit=crop",
-    alt: "Conference moment 10",
-  },
-];
+const req = require.context("../../../assets/images/Marquee", false, /\.jpg$/);
 
+const images = Array.from({ length: 25 }, (_, i) => ({
+  id: i + 1,
+  src: req(`./marquee${i + 1}.jpg`),
+  alt: `Gallery image ${i + 1}`,
+}));
 const ImageCard = ({ src, alt }) => (
   <div className="image-card">
     <img src={src || "/placeholder.svg"} alt={alt} loading="lazy" />
@@ -65,13 +29,12 @@ const MarqueeColumn = ({ images, duration, reverse = false }) => (
 );
 
 const MediaSection1 = () => {
-  const column1 = [images[0], images[1], images[2]];
-  const column2 = [images[3], images[4], images[5]];
-  const column3 = [images[6], images[7], images[0]];
-  const column4 = [images[1], images[3], images[5]];
-  const column5 = [images[2], images[4], images[6]];
-  const column6 = [images[7], images[8], images[9]];
-
+  const column1 = [images[0], images[1], images[2], images[3]];
+  const column2 = [images[4], images[5], images[6], images[7]];
+  const column3 = [images[8], images[9], images[10], images[11]];
+  const column4 = [images[12], images[13], images[14], images[15]];
+  const column5 = [images[16], images[17], images[18], images[19]];
+  const column6 = [images[20], images[21], images[22], images[23]];
   return (
     <section className="media-section">
       {/* Header Section */}
