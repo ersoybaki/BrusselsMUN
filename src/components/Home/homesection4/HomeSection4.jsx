@@ -11,9 +11,9 @@ function HomeSection4() {
         <div className="homesection4-events-header">
           <h2 className="homesection4-events-title">Our Upcoming Events</h2>
           <p className="homesection4-events-subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed do eiusmod. Lorem ipsum dolor.
+            Experience BrusselsMUN beyond the conference. From institutional
+            visits to diplomatic engagement, these are the moments that define
+            your journey.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ function HomeSection4() {
 
           <div className="homesection4-event-card">
             <div className="homesection4-event-image">
-              <img src={Upcoming2} alt="Visit to CNDA" />
+              <img src={Upcoming2} alt="Visit to European Parliament" />
             </div>
             <div className="homesection4-event-content">
               <h3 className="homesection4-event-title">

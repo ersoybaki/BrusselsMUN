@@ -1,6 +1,5 @@
 .homesection2 {
   background-color: #fff;
-  padding: 60px 0;
 }
 
 .homesection2-container {
@@ -15,6 +14,7 @@
 .homesection2-image {
   flex: 1;
   min-width: 350px;
+  margin-top: 9%;
 }
 
 .homesection2-image img {
@@ -44,7 +44,7 @@
   font-size: clamp(30px, 4vw, 40px);
   font-weight: 700;
   line-height: 1.2;
-  color: #1a1a1a;
+  color: #000;
   margin: 0;
 }
 
@@ -52,7 +52,7 @@
   font-family: "Open Sans", sans-serif;
   font-size: clamp(13px, 2vw, 15px);
   line-height: 1.7;
-  color: #666;
+  color: #000;
   margin: 0 0 16px 0;
 }
 

@@ -1,5 +1,5 @@
 .homesection9 {
-  padding: 60px 20px;
+  padding: 0 20px;
 }
 
 .homesection9-container {
@@ -54,7 +54,7 @@
 .homesection9-map-link {
   position: relative;
   display: block;
-  background-color: #e0e0e0;
+  background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -197,7 +197,7 @@
   font-family: "Open Sans", sans-serif;
   font-size: clamp(12px, 2vw, 13px);
   padding: 10px 12px;
-  border: 1px solid #ddd;
+  border: 1px solid #b9b9b9;
   border-radius: 4px;
   transition: border-color 0.3s ease;
   width: 100%;
@@ -239,7 +239,7 @@
 .homesection9-checkbox span {
   font-family: "Open Sans", sans-serif;
   font-size: clamp(12px, 2vw, 13px);
-  color: #333;
+  color: #000;
 }
 
 .homesection9-form-actions {

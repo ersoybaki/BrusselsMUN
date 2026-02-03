@@ -4,6 +4,12 @@
   margin: 0;
 }
 
+h2,
+h3,
+h4 {
+  font-weight: 600 !important;
+}
+
 @font-face {
   font-family: "Syne";
   src: url("/src/assets/fonts/Syne-SemiBold.ttf") format("truetype");

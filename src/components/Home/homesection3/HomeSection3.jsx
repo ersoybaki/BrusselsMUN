@@ -41,8 +41,9 @@ const HomeSection3 = () => {
             Brussels 2026 MUN Conference Overview
           </h2>
           <p className="homesection3-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Experience an unparalleled gathering of student delegates who
+            convene to address pressing global issues through structured debate
+            and diplomatic discourse.
           </p>
 
           <div className="homesection3-accordion">

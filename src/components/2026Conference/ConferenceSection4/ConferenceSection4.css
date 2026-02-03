@@ -14,6 +14,7 @@
 .conference-section-4__image-wrapper {
   flex: 1;
   min-width: 0;
+  margin-top: 35px;
 }
 
 .conference-section-4__image {

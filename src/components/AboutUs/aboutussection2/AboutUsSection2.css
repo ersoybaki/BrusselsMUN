@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
 .quote-section {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 400px;
-  padding: 80px 24px;
+  padding: 0 24px 80px;
   background-color: #fff;
 }
 
@@ -18,7 +20,7 @@
 .quote-text {
   font-family: "Playfair", serif;
   font-style: italic;
-  font-size: 30px;
+  font-size: clamp(1.5rem, 2vw, 1.875rem);
   font-weight: 500;
   line-height: 1.6;
   color: #000;
@@ -29,7 +31,7 @@
 .quote-highlight {
   font-family: "Playfair Display", serif;
   font-style: italic;
-  font-size: 30px;
+  font-size: clamp(1.5rem, 2vw, 1.875rem);
   color: #0047ab;
 }
 
@@ -62,14 +64,14 @@
 
 .author-name {
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: clamp(0.9375rem, 1.5vw, 1rem);
   font-weight: 600;
   color: #000;
 }
 
 .author-title {
   font-family: "Open Sans", sans-serif;
-  font-size: 0.875rem;
+  font-size: clamp(0.8125rem, 1.2vw, 0.875rem);
   font-weight: 400;
   color: #666666;
 }
@@ -82,7 +84,7 @@
   }
 
   .quote-text {
-    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
     margin-bottom: 32px;
   }
 
@@ -100,7 +102,7 @@
   }
 
   .quote-text {
-    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 3vw, 1.25rem);
     line-height: 1.5;
     margin-bottom: 28px;
   }
@@ -115,10 +117,10 @@
   }
 
   .author-name {
-    font-size: 0.9375rem;
+    font-size: clamp(0.875rem, 2vw, 0.9375rem);
   }
 
   .author-title {
-    font-size: 0.8125rem;
+    font-size: clamp(0.75rem, 1.5vw, 0.8125rem);
   }
 }

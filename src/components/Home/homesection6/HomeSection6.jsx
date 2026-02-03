@@ -10,13 +10,7 @@ const HomeSection6 = () => {
       <div className="homesection6-container">
         <div className="homesection6-header">
           <p className="homesection6-subtitle">BENEFITS FOR DELEGATES</p>
-          <h2 className="homesection6-title">Why Attend?</h2>
-          <p className="homesection6-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod. Lorem ipsum dolor sit amet.
-          </p>
+          <h2 className="homesection6-title">What You'll Learn</h2>
         </div>
 
         <div className="homesection6-grid">

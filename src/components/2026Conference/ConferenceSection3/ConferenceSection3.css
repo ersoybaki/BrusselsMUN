@@ -16,11 +16,10 @@
   flex: 1;
   max-width: 350px;
   text-align: center;
-  cursor: pointer;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
-  padding: 10px 12px;
+  padding: 40px 12px;
 }
 
 .conference-section-3__card:hover {

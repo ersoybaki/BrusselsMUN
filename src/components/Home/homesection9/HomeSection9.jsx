@@ -236,7 +236,7 @@ const HomeSection9 = () => {
         </div>
         <div className="homesection9-social">
           <a
-            href="https://facebook.com/BrusselsMUN"
+            href="https://instagram.com/BrusselsMUN"
             target="_blank"
             rel="noopener noreferrer"
             className="homesection9-social-item"
@@ -246,29 +246,10 @@ const HomeSection9 = () => {
               viewBox="0 0 24 24"
               fill="currentColor"
             >
-              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,5A1,1 0 0,1 19,6A1,1 0 0,1 18,7A1,1 0 0,1 17,6A1,1 0 0,1 18,5Z" />
             </svg>
             <div>
               <p className="homesection9-social-label">Follow us</p>
-              <p className="homesection9-social-handle">@BrusselsMUN</p>
-            </div>
-          </a>
-
-          <a
-            href="https://twitter.com/BrusselsMUN"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="homesection9-social-item"
-          >
-            <svg
-              className="homesection9-social-icon"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-            </svg>
-            <div>
-              <p className="homesection9-social-label">Tweet us</p>
               <p className="homesection9-social-handle">@BrusselsMUN</p>
             </div>
           </a>
@@ -293,7 +274,7 @@ const HomeSection9 = () => {
           </a>
 
           <a
-            href="https://instagram.com/BrusselsMUN"
+            href="https://www.tiktok.com/@brusselsmun?_r=1&_t=ZP-93cTmtQprJ8"
             target="_blank"
             rel="noopener noreferrer"
             className="homesection9-social-item"
@@ -303,11 +284,28 @@ const HomeSection9 = () => {
               viewBox="0 0 24 24"
               fill="currentColor"
             >
-              <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,5A1,1 0 0,1 19,6A1,1 0 0,1 18,7A1,1 0 0,1 17,6A1,1 0 0,1 18,5Z" />
+              <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z" />
             </svg>
             <div>
               <p className="homesection9-social-label">Follow us</p>
               <p className="homesection9-social-handle">@BrusselsMUN</p>
+            </div>
+          </a>
+
+          <a
+            href="mailto:info@brusselsmun.com"
+            className="homesection9-social-item"
+          >
+            <svg
+              className="homesection9-social-icon"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+            <div>
+              <p className="homesection9-social-label">Email us</p>
+              <p className="homesection9-social-handle">info@brusselsmun.com</p>
             </div>
           </a>
         </div>
