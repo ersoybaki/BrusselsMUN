@@ -11,47 +11,52 @@ import HomeSection9 from "../components/Home/homesection9/HomeSection9.jsx";
 import Slider from "../components/2026Conference/ConferenceSection2/ConferenceSection2.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 
-import Logo1 from "../assets/images/SlideImages/International_Criminal_Court_logo.svg.png";
-import Logo2 from "../assets/images/SlideImages/Logo_UNESCO_2021.svg.png";
-import Logo3 from "../assets/images/SlideImages/Flag_of_NATO.svg";
-import Logo4 from "../assets/images/SlideImages/Council_of_the_EU_and_European_Council.svg.png";
-import Logo5 from "../assets/images/SlideImages/OECD_logo_new.svg.png";
-import Logo6 from "../assets/images/SlideImages/UN_emblem_blue.svg.png";
-import Logo7 from "../assets/images/SlideImages/UNHCR-visibility-vertical-Blue-RGB-v2015.jpg";
-import Logo8 from "../assets/images/SlideImages/United_Nations_Human_Rights_Council_Logo.svg";
+import Logo1 from "../assets/images/Partners/European-Parliament.png";
+import Logo2 from "../assets/images/Partners/GIMUN.png";
+import Logo3 from "../assets/images/Partners/Hertie-School.png";
+import Logo4 from "../assets/images/Partners/JetImport.png";
+import Logo5 from "../assets/images/Partners/Lei-MUN.png";
+import Logo6 from "../assets/images/Partners/Louvain-MUN.png";
+import Logo7 from "../assets/images/Partners/NATO.png";
+import Logo8 from "../assets/images/Partners/Visit-Brussels.png";
+import Logo9 from "../assets/images/Partners/VUBWhite.png";
 
 const sampleLogos = [
   {
     src: Logo1,
-    alt: "United Nations",
+    alt: "EU Parliament",
   },
   {
     src: Logo2,
-    alt: "UNESCO",
+    alt: "GIMUN",
   },
   {
     src: Logo3,
-    alt: "NATO",
+    alt: "Hertie School",
   },
   {
     src: Logo4,
-    alt: "OECD",
+    alt: "JetImport",
   },
   {
     src: Logo5,
-    alt: "European Union",
+    alt: "Lei-MUN",
   },
   {
     src: Logo6,
-    alt: "International Court of Justice",
+    alt: "Louvain-MUN",
   },
   {
     src: Logo7,
-    alt: "UNHCR",
+    alt: "NATO",
   },
   {
     src: Logo8,
-    alt: "Human Rights Council",
+    alt: "Visit Brussels",
+  },
+  {
+    src: Logo9,
+    alt: "VUB",
   },
 ];
 
