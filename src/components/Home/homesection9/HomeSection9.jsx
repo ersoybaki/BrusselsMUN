@@ -305,7 +305,7 @@ const HomeSection9 = () => {
             </svg>
             <div>
               <p className="homesection9-social-label">Email us</p>
-              <p className="homesection9-social-handle">info@brusselsmun.com</p>
+              <p className="homesection9-social-handle">info@brusselsmun</p>
             </div>
           </a>
         </div>

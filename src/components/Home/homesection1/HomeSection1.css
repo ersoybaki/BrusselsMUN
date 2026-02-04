@@ -1,7 +1,7 @@
 .homesection1 {
   margin-top: 60px; /* Reduced from 75px */
   width: 100%;
-  min-height: 85vh; /* Reduced from 100vh */
+  max-height: 80vh; /* Reduced from 100vh */
   display: flex;
   flex-direction: column;
 }
@@ -10,7 +10,7 @@
   flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: calc(85vh - 60px); /* Reduced from calc(100vh - 80px) */
+  min-height: calc(80vh - 60px); /* Reduced from calc(100vh - 80px) */
 }
 
 .homesection1-content {

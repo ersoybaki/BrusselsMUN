@@ -1,5 +1,5 @@
 import "./Footer.css";
-import MUNLogo from "../../assets/images/MUNLogo.png";
+import MUNLogo from "../../assets/images/MUNLogoWhite.png";
 import { useState } from "react";
 
 export default function Footer() {

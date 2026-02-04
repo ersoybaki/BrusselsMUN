@@ -37,7 +37,7 @@ export default function HomeSection1() {
           />
         </div>
       </div>
-      <div className="homesection1-footer">
+      {/* <div className="homesection1-footer">
         <div className="homesection1-footer-logos">
           <img
             src="/vub-brussels-school-of-governance-logo.jpg"
@@ -47,7 +47,7 @@ export default function HomeSection1() {
           <img src="/generic-company-logo.png" alt="Partner Logo" />
           <img src="/text-logo.jpg" alt="Partner Logo" />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
