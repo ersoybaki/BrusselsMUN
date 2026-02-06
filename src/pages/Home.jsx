@@ -20,6 +20,12 @@ import Logo6 from "../assets/images/Partners/Louvain-MUN.png";
 import Logo7 from "../assets/images/Partners/NATO.png";
 import Logo8 from "../assets/images/Partners/Visit-Brussels.png";
 import Logo9 from "../assets/images/Partners/VUBWhite.png";
+import Logo10 from "../assets/images/Partners/Antwerp-MUN.png";
+import Logo11 from "../assets/images/Partners/EuropeanCommissionLogo.png";
+import Logo12 from "../assets/images/Partners/FDNU.png";
+import Logo13 from "../assets/images/Partners/permanent-representation-of-belgium-to-the-european-union.png";
+import Logo14 from "../assets/images/Partners/unnamed.png";
+import Logo15 from "../assets/images/Partners/Ghent-MUN.png";
 
 const sampleLogos = [
   {
@@ -57,6 +63,30 @@ const sampleLogos = [
   {
     src: Logo9,
     alt: "VUB",
+  },
+  {
+    src: Logo10,
+    alt: "Antwerp MUN",
+  },
+  {
+    src: Logo11,
+    alt: "European Commission",
+  },
+  {
+    src: Logo12,
+    alt: "FDNU",
+  },
+  {
+    src: Logo13,
+    alt: "Belgium",
+  },
+  {
+    src: Logo14,
+    alt: "Unnamed",
+  },
+  {
+    src: Logo15,
+    alt: "Ghent MUN",
   },
 ];
 

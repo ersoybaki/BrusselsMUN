@@ -7,7 +7,9 @@ export default function HomeSection1() {
       <div className="homesection1-container">
         <div className="homesection1-content">
           <p className="homesection1-subtitle">STEP INTO DIPLOMACY</p>
-          <h1 className="homesection1-title">Experience European Firsthand</h1>
+          <h1 className="homesection1-title">
+            Experience European Democracy Firsthand
+          </h1>
           <p className="homesection1-description">
             Join 100+ delegates at Europe's premier Model United Nations
             conference.
