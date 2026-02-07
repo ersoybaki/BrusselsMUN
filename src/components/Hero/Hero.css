@@ -1,6 +1,6 @@
 .hero-banner {
   position: relative;
-  margin-top: 100px;
+  margin-top: 80px;
   width: 100%;
   min-height: var(--hero-min-height, 90dvh);
   display: flex;
@@ -63,7 +63,7 @@
 /* Mobile */
 @media (max-width: 640px) {
   .hero-banner {
-    margin-top: 60px;
+    margin-top: 50px;
     min-height: var(--hero-min-height, 60dvh);
   }
 

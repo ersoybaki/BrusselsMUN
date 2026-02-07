@@ -408,6 +408,7 @@
   .media-section {
     padding: 3rem 1rem;
     gap: 2rem;
+    height: 100%;
   }
 
   .marquee-wrapper {
