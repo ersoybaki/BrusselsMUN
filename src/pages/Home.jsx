@@ -10,6 +10,7 @@ import HomeSection9 from "../components/Home/homesection9/HomeSection9.jsx";
 import Slider from "../components/2026Conference/ConferenceSection2/ConferenceSection2.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 
+import Elevates from "../assets/images/Partners/Elevates-Icon-White---PNG.png";
 import Logo1 from "../assets/images/Partners/European-Parliament.png";
 import Logo2 from "../assets/images/Partners/GIMUN.png";
 import Logo3 from "../assets/images/Partners/Hertie-School.png";
@@ -27,6 +28,10 @@ import Logo14 from "../assets/images/Partners/unnamed.png";
 import Logo15 from "../assets/images/Partners/Ghent-MUN.png";
 
 const sampleLogos = [
+  {
+    src: Elevates,
+    alt: "Elevates",
+  },
   {
     src: Logo1,
     alt: "EU Parliament",

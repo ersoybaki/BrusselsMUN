@@ -1,23 +1,25 @@
 .homesection1 {
-  margin-top: 60px; /* Reduced from 75px */
+  margin-top: 60px;
   width: 100%;
-  max-height: 80vh; /* Reduced from 100vh */
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
 }
 
 .homesection1-container {
   flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: calc(80vh - 60px); /* Reduced from calc(100vh - 80px) */
+  min-height: calc(80vh - 60px);
 }
 
 .homesection1-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px 60px; /* Reduced from 60px 80px */
+  padding: 40px 60px;
   background-color: #ffffff;
 }
 
@@ -25,9 +27,9 @@
   font-family: "Syne", sans-serif;
   font-size: clamp(10px, 2vw, 12px);
   font-weight: 600;
-  letter-spacing: 1.5px; /* Reduced from 2px */
+  letter-spacing: 1.5px;
   color: #363636;
-  margin-bottom: 16px; /* Reduced from 20px */
+  margin-bottom: 16px;
   text-transform: uppercase;
 }
 
@@ -37,7 +39,7 @@
   font-weight: 700;
   line-height: 1.1;
   color: #000;
-  margin-bottom: 20px; /* Reduced from 30px */
+  margin-bottom: 20px;
   letter-spacing: -1px;
 }
 
@@ -46,7 +48,7 @@
   font-size: clamp(14px, 2vw, 16px);
   line-height: 1.6;
   color: #000;
-  margin-bottom: 12px; /* Reduced from 16px */
+  margin-bottom: 12px;
 }
 
 .homesection1-location {
@@ -54,12 +56,12 @@
   font-size: clamp(12px, 2vw, 14px);
   line-height: 1.6;
   color: #666;
-  margin-bottom: 30px; /* Reduced from 40px */
+  margin-bottom: 30px;
 }
 
 .homesection1-buttons {
   display: flex;
-  gap: 12px; /* Reduced from 16px */
+  gap: 12px;
 }
 
 .homesection1-btn {
@@ -67,11 +69,12 @@
   font-size: clamp(10px, 2vw, 12px);
   font-weight: 700;
   letter-spacing: 1px;
-  padding: 12px 24px; /* Reduced from 16px 32px */
+  padding: 12px 24px;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3s ease;
   display: inline-block;
+  box-sizing: border-box;
 }
 
 .homesection1-btn-primary {
@@ -114,7 +117,7 @@
 
 .homesection1-footer {
   background-color: #004287;
-  padding: 18px 60px; /* Reduced from 24px 80px */
+  padding: 18px 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,69 +127,271 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 45px; /* Reduced from 60px */
+  gap: 45px;
   flex-wrap: wrap;
 }
 
 .homesection1-footer-logos img {
-  height: 32px; /* Reduced from 40px */
+  height: 32px;
   width: auto;
   object-fit: contain;
   filter: brightness(0) invert(1);
   opacity: 0.9;
 }
 
-/* Responsive Design */
+/* Tablet — e.g. iPad, Surface (max-width: 1024px) */
 @media (max-width: 1024px) {
+  .homesection1 {
+    margin-top: 56px;
+  }
+
   .homesection1-container {
     grid-template-columns: 1fr;
+    min-height: auto;
   }
 
   .homesection1-content {
-    padding: 40px 30px; /* Reduced from 60px 40px */
+    padding: 48px 32px;
   }
 
   .homesection1-image {
-    min-height: 350px; /* Reduced from 400px */
+    min-height: 320px;
+    max-height: 400px;
   }
 
   .homesection1-footer {
-    padding: 18px 30px; /* Reduced from 24px 40px */
+    padding: 18px 30px;
   }
 
   .homesection1-footer-logos {
-    gap: 30px; /* Reduced from 40px */
+    gap: 30px;
   }
 }
 
+/* Small Tablet / Large Phone — e.g. iPad Mini, large Android (max-width: 768px) */
 @media (max-width: 768px) {
+  .homesection1 {
+    margin-top: 50px;
+  }
+
+  .homesection1-container {
+    min-height: auto;
+  }
+
   .homesection1-content {
-    padding: 30px 20px; /* Reduced from 40px 24px */
+    padding: 40px 24px;
+  }
+
+  .homesection1-title {
+    font-size: clamp(28px, 7vw, 42px);
+    margin-bottom: 16px;
+  }
+
+  .homesection1-description {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .homesection1-location {
+    font-size: 13px;
+    margin-bottom: 24px;
   }
 
   .homesection1-buttons {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    gap: 10px;
   }
 
   .homesection1-btn {
     text-align: center;
-    width: 60%;
+    width: 100%;
+    max-width: 280px;
+    padding: 14px 20px;
+    font-size: 12px;
   }
 
   .homesection1-image {
-    min-height: 250px; /* Reduced from 300px */
+    min-height: 240px;
+    max-height: 320px;
   }
 
   .homesection1-footer {
-    padding: 16px 20px; /* Reduced from 20px 24px */
+    padding: 16px 20px;
   }
 
   .homesection1-footer-logos {
-    gap: 24px; /* Reduced from 30px */
+    gap: 24px;
   }
 
   .homesection1-footer-logos img {
-    height: 28px; /* Reduced from 32px */
+    height: 28px;
+  }
+}
+
+/* Standard Phone — e.g. iPhone 12/13/14, Pixel 5/6 (max-width: 480px) */
+@media (max-width: 480px) {
+  .homesection1 {
+    margin-top: 48px;
+  }
+
+  .homesection1-content {
+    padding: 32px 20px;
+  }
+
+  .homesection1-subtitle {
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    margin-bottom: 12px;
+  }
+
+  .homesection1-title {
+    font-size: clamp(26px, 8vw, 36px);
+    margin-bottom: 14px;
+    letter-spacing: -0.5px;
+  }
+
+  .homesection1-description {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .homesection1-location {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .homesection1-buttons {
+    align-items: center;
+  }
+
+  .homesection1-btn {
+    max-width: 260px;
+    padding: 12px 18px;
+    font-size: 11px;
+  }
+
+  .homesection1-image {
+    min-height: 200px;
+    max-height: 280px;
+  }
+
+  .homesection1-footer {
+    padding: 14px 16px;
+  }
+
+  .homesection1-footer-logos {
+    gap: 18px;
+  }
+
+  .homesection1-footer-logos img {
+    height: 24px;
+  }
+}
+
+/* Small Phone — e.g. iPhone SE, Galaxy S8 (max-width: 375px) */
+@media (max-width: 375px) {
+  .homesection1 {
+    margin-top: 44px;
+  }
+
+  .homesection1-content {
+    padding: 28px 16px;
+  }
+
+  .homesection1-subtitle {
+    font-size: 9px;
+    margin-bottom: 10px;
+  }
+
+  .homesection1-title {
+    font-size: clamp(24px, 7.5vw, 32px);
+    margin-bottom: 12px;
+  }
+
+  .homesection1-description {
+    font-size: 13px;
+  }
+
+  .homesection1-location {
+    font-size: 11px;
+    margin-bottom: 18px;
+  }
+
+  .homesection1-btn {
+    max-width: 240px;
+    padding: 11px 16px;
+    font-size: 10px;
+  }
+
+  .homesection1-image {
+    min-height: 180px;
+    max-height: 240px;
+  }
+
+  .homesection1-footer {
+    padding: 12px 14px;
+  }
+
+  .homesection1-footer-logos {
+    gap: 14px;
+  }
+
+  .homesection1-footer-logos img {
+    height: 20px;
+  }
+}
+
+/* Very Small Phone — e.g. iPhone SE (1st gen), 320px devices (max-width: 320px) */
+@media (max-width: 320px) {
+  .homesection1 {
+    margin-top: 40px;
+  }
+
+  .homesection1-content {
+    padding: 24px 12px;
+  }
+
+  .homesection1-subtitle {
+    font-size: 8px;
+    margin-bottom: 8px;
+  }
+
+  .homesection1-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .homesection1-description {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .homesection1-location {
+    font-size: 10px;
+    margin-bottom: 16px;
+  }
+
+  .homesection1-btn {
+    max-width: 220px;
+    padding: 10px 14px;
+    font-size: 9px;
+  }
+
+  .homesection1-image {
+    min-height: 160px;
+    max-height: 200px;
+  }
+
+  .homesection1-footer {
+    padding: 10px 12px;
+  }
+
+  .homesection1-footer-logos {
+    gap: 10px;
+  }
+
+  .homesection1-footer-logos img {
+    height: 18px;
   }
 }
