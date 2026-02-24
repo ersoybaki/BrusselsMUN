@@ -11,21 +11,21 @@ const content = [
     label: "OUR VISION",
     title: "Where It All Began",
     description:
-      "BrusselsMUN was born from a simple realization: Model UN conferences often simulate diplomacy, but rarely connect delegates to where diplomacy actually happens. Being in Brussels, the heart of European decision-making changes everything. That realization became our foundation.",
+      "Elevates MUN was born in Cyprus, extended to the Netherlands.",
     image: StickyScrollImg1,
   },
   {
     label: "OUR STORY",
     title: "From Vision to Reality",
     description:
-      "We began as an ambitious vision that has grown into a conference where 150+ delegates from 35+ countries don't just debate resolutions, they visit the European Parliament, and build networks that shape their futures. ",
+      "We began as an ambitious vision that has grown into a conference where 150+ delegates from 35+ countries. ",
     image: StickyScrollImg2,
   },
   {
     label: "OUR VALUES",
     title: "Where You Belong",
     description:
-      "Whether you're passionate about climate policy, human rights, or international security, BrusselsMUN offers the platform, the access, and the community to turn that apassion into impact.",
+      "Whether you're passionate about climate policy, human rights, or international security, Elevates MUN offers the platform.",
     image: StickyScrollImg3,
   },
 ];

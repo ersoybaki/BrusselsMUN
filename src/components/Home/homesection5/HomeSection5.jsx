@@ -15,9 +15,7 @@ function HomeSection5() {
             </h2>
             <p className="homesection5-stats-description">
               What happens when you bring 100+ delegates from 35+ countries into
-              eight elite committees, DISEC, NATO, Crisis Management, UNHCR, EU
-              Council. Giving each delegate direct access to Europe&apos;s
-              institutions. This is BrusselsMUN.
+              a real diplomatic environment? The numbers tell the story.
             </p>
           </div>
 
@@ -53,9 +51,9 @@ function HomeSection5() {
             <div className="homesection5-stat-number">8</div>
             <div className="homesection5-stat-bar"></div>
             <p className="homesection5-stat-text">
-              Including DISEC, NATO, Crisis Management, UNHCR, EU Council, and
-              more. Each committee tackles real policy challenges that shape
-              European and global affairs.
+              Committees that tackled real-world issues, from climate change to
+              global health, giving delegates hands-on experience with
+              diplomacy.
             </p>
           </div>
 
@@ -63,9 +61,8 @@ function HomeSection5() {
             <div className="homesection5-stat-number">3</div>
             <div className="homesection5-stat-bar red-bar"></div>
             <p className="homesection5-stat-text">
-              Institutional visits during the conference schedule includes the
-              European Parliament, Belgian Permanent Representative to the EU
-              and UN House.
+              Institutional visits, including a unique tour of the Elevates MUN
+              conference venue.
             </p>
           </div>
         </div>

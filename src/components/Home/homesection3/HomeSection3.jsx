@@ -12,23 +12,22 @@ const HomeSection3 = () => {
   const accordionItems = [
     {
       title: "Location & Dates",
-      content:
-        "Hosted in Brussels, Belgium, At The Brussels School Of Governance (VUB)—In The Heart Of Europe's Diplomatic And Parliamentary Capital. Expect A Professional Venue, International Atmosphere, And Easy Access To EU Institutions And The City Centre - February 5-8, 2026.",
+      content: "Hosted at Elevates Offices - April 5-8, 2026.",
     },
     {
       title: "Expected Delegates",
       content:
-        "We're welcoming around 100+ delegates from universities and schools across Europe. Everyone here is serious about international affairs, whether they've done MUN before or they're stepping into it for the first time. You'll be working alongside people who are genuinely curious about policy, who take their research seriously, and who treat negotiations like they matter. It's a smaller, more focused group than you'll find at larger conferences.",
+        "We're welcoming around 100+ delegates from universities and schools across Europe.",
     },
     {
       title: "Countries Represented",
       content:
-        "Delegates come from over 35 countries across Europe and beyond, That mix of backgrounds means every committee discussion feels genuinely international, and the networking happens naturally, you'll meet people doing things you actually care about. It's the kind of diversity that mirrors real international bodies and makes the whole experience feel grounded in reality.",
+        "Delegates come from over 35 countries across Europe and beyond. That mix of backgrounds means every committee discussion feels genuinely international, and the networking happens naturally, you'll meet people doing things you actually care about. ",
     },
     {
       title: "Enrollment",
       content:
-        "We operate on a rolling basis with limited spaces. Applications have now closed, and we're reviewing submissions carefully. Successful delegates have received confirmation. Once confirmed, you'll receive payment and accommodation details. The delegate fee covers everything: all meals, institutional visits, and conference materials. We're selective about who joins us, and we're excited about the group coming to Brussels this February.",
+        "We operate on a rolling basis with limited spaces. Applications have now closed, and we're reviewing submissions carefully. Successful delegates have received confirmation.",
     },
   ];
 
@@ -38,7 +37,7 @@ const HomeSection3 = () => {
         <div className="homesection3-content">
           <span className="homesection3-label">OVERVIEW</span>
           <h2 className="homesection3-title">
-            Brussels 2026 MUN Conference Overview
+            Elevates MUN Conference Overview
           </h2>
           <p className="homesection3-description">
             Experience an unparalleled gathering of student delegates who

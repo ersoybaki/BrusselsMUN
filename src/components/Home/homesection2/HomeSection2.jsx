@@ -15,9 +15,11 @@ export default function HomeSection2() {
             Together We're Building Brighter Future For The Next Generation
           </h2>
           <p className="homesection2-description">
-            BrusselsMUN brings ambitious students from across Europe to a city
-            where diplomacy is lived. Delegates refine their voice, expand their
-            network, and engage with the institutions that shape global policy.
+            Elevates MUN brings ambitious students from across the world
+            together to experience the thrill of diplomacy. Our mission is to
+            empower the next generation of leaders by providing an unparalleled
+            platform for learning, networking, and personal growth. Join us in
+            shaping a brighter future through the power of Model United Nations.
           </p>
 
           <div className="homesection2-features">

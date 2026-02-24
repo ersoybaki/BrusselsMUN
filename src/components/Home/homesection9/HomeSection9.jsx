@@ -236,7 +236,7 @@ const HomeSection9 = () => {
         </div>
         <div className="homesection9-social">
           <a
-            href="https://instagram.com/BrusselsMUN"
+            href="https://instagram.com/elevates.it"
             target="_blank"
             rel="noopener noreferrer"
             className="homesection9-social-item"
@@ -250,12 +250,12 @@ const HomeSection9 = () => {
             </svg>
             <div>
               <p className="homesection9-social-label">Follow us</p>
-              <p className="homesection9-social-handle">@BrusselsMUN</p>
+              <p className="homesection9-social-handle">@Elevates</p>
             </div>
           </a>
 
           <a
-            href="https://www.linkedin.com/company/brussels-model-united-nations/?originalSubdomain=be"
+            href="https://instagram.com/elevates.it"
             target="_blank"
             rel="noopener noreferrer"
             className="homesection9-social-item"
@@ -269,12 +269,12 @@ const HomeSection9 = () => {
             </svg>
             <div>
               <p className="homesection9-social-label">Connect with us</p>
-              <p className="homesection9-social-handle">@BrusselsMUN</p>
+              <p className="homesection9-social-handle">@Elevates</p>
             </div>
           </a>
 
           <a
-            href="https://www.tiktok.com/@brusselsmun?_r=1&_t=ZP-93cTmtQprJ8"
+            href="https://instagram.com/elevates.it"
             target="_blank"
             rel="noopener noreferrer"
             className="homesection9-social-item"
@@ -288,12 +288,12 @@ const HomeSection9 = () => {
             </svg>
             <div>
               <p className="homesection9-social-label">Follow us</p>
-              <p className="homesection9-social-handle">@BrusselsMUN</p>
+              <p className="homesection9-social-handle">@Elevates</p>
             </div>
           </a>
 
           <a
-            href="mailto:info@brusselsmun.com"
+            href="https://instagram.com/elevates.it"
             className="homesection9-social-item"
           >
             <svg
@@ -305,7 +305,7 @@ const HomeSection9 = () => {
             </svg>
             <div>
               <p className="homesection9-social-label">Email us</p>
-              <p className="homesection9-social-handle">info@brusselsmun</p>
+              <p className="homesection9-social-handle">info@elevates.it</p>
             </div>
           </a>
         </div>

@@ -11,7 +11,7 @@ function HomeSection4() {
         <div className="homesection4-events-header">
           <h2 className="homesection4-events-title">Our Upcoming Events</h2>
           <p className="homesection4-events-subtitle">
-            Experience BrusselsMUN beyond the conference. From institutional
+            Experience Elevates MUN beyond the conference. From institutional
             visits to diplomatic engagement, these are the moments that define
             your journey.
           </p>
@@ -23,11 +23,9 @@ function HomeSection4() {
               <img src={Upcoming1} alt="MUN Brussels" />
             </div>
             <div className="homesection4-event-content">
-              <h3 className="homesection4-event-title">MUN BRUSSELS 2026</h3>
+              <h3 className="homesection4-event-title">Elevates MUN</h3>
               <p className="homesection4-event-description">
-                Join us for four days of intensive diplomacy in Europe's
-                diplomatic capital. From February 5–8, you'll debate real policy
-                challenges across eight committees
+                Join us for four days of intensive diplomacy in our offices.
               </p>
             </div>
           </div>
@@ -38,13 +36,11 @@ function HomeSection4() {
             </div>
             <div className="homesection4-event-content">
               <h3 className="homesection4-event-title">
-                Visit to the European Parliament
+                Visit to the Elevates MUN Conference Venue
               </h3>
               <p className="homesection4-event-description">
-                During the conference, you'll step inside the European
-                Parliament to see how European democracy actually works. This
-                isn't a rushed tour. You'll learn from people who work there,
-                understand the legislative process firsthand.
+                During the conference, delegates will have the unique
+                opportunity to visit the Elevates MUN conference venue
               </p>
             </div>
           </div>
@@ -57,8 +53,7 @@ function HomeSection4() {
               <h3 className="homesection4-event-title">Embassy Day</h3>
               <p className="homesection4-event-description">
                 We're organising a dedicated Embassy Day where you'll meet
-                diplomats and staff from key missions in Brussels. Hear directly
-                about their work, ask questions about careers in diplomacy.
+                diplomats and staff from key missions in Netherlands
               </p>
             </div>
           </div>

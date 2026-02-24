@@ -107,8 +107,7 @@ export default function HomeSection8() {
           <h2 className="gallery-title">Gallery</h2>
           <p className="gallery-description">
             Explore the great moments that shaped the conference rooms and
-            committees. From debates to institutional visits, relive the
-            experiences that define BrusselsMUN.
+            committees.
           </p>
         </div>
 

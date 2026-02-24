@@ -97,7 +97,7 @@ export default function AboutUsSection4() {
   return (
     <section ref={sectionRef} className="about-hero">
       <div className="about-hero-container">
-        <p className="about-hero-subtitle">Experience BrusselsMUN 2026</p>
+        <p className="about-hero-subtitle">Experience Elevates MUN</p>
 
         <h1 className="about-hero-title">
           {renderWords()}

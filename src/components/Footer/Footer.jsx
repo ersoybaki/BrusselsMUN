@@ -30,7 +30,7 @@ export default function Footer() {
 
       fd.set("email", formData.email);
 
-      fd.append("access_key", "84403559-7449-4679-8d7d-902defc44abd");
+      fd.append("access_key", "");
 
       fd.append("subject", "New subscription from BrusselsMUN footer");
 
@@ -65,10 +65,8 @@ export default function Footer() {
           <div className="footer-newsletter">
             <h2 className="footer-heading">Where Diplomacy Becomes Real.</h2>
             <p className="footer-description">
-              BrusselsMUN connects student delegates with real institutions and
-              professionals shaping European policy. Hosted at the Brussels
-              School of Governance, we bridge the gap between academic debate
-              and real diplomacy.
+              Elevates MUN connects student delegates with real institutions and
+              professionals shaping European policy.
             </p>
             <form className="footer-form" onSubmit={handleSubmit}>
               {/* CHANGE: Honeypot input (keep hidden via CSS) */}
@@ -129,9 +127,6 @@ export default function Footer() {
                 alt="Company Logo"
                 className="footer-logo-image"
               />
-              <p className="footer-tagline">
-                Rethinking Europe in a changing world
-              </p>
             </div>
 
             <nav className="footer-nav">

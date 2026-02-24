@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import Hero from "../components/Hero/Hero.jsx";
 import HeroImg from "../assets/images/2026Conference-HeroImage.png";
-import ConferenceSection1 from "../components/2026Conference/ConferenceSection1/ConferenceSection1.jsx";
 import ConferenceSection2 from "../components/2026Conference/ConferenceSection2/ConferenceSection2.jsx";
 import ConferenceSection3 from "../components/2026Conference/ConferenceSection3/ConferenceSection3.jsx";
 import ConferenceSection4 from "../components/2026Conference/ConferenceSection4/ConferenceSection4.jsx";
@@ -54,12 +53,11 @@ const sampleLogos = [
   },
 ];
 
-function Coneference2026() {
+function Conference2026() {
   return (
     <>
       <Navbar />
       <Hero title="2026 Conference" backgroundImage={HeroImg} />
-      <ConferenceSection1 />
       <ConferenceSection2 images={sampleLogos} backgroundColor="#ffffff" />
       <ConferenceSection3 />
       <ConferenceSection4 />
@@ -70,4 +68,4 @@ function Coneference2026() {
   );
 }
 
-export default Coneference2026;
+export default Conference2026;

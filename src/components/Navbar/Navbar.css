@@ -7,7 +7,7 @@
   width: 100vw;
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  padding: 20px 20px;
+  padding: 25px 20px;
   transition: background-color 0.3s ease;
   z-index: 100;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -21,7 +21,7 @@
 
 .logo {
   width: auto;
-  height: 40px;
+  height: 35px;
   transition: transform 0.3s ease;
 }
 
@@ -31,7 +31,7 @@
   color: #000;
   transition: opacity 0.3s ease;
   text-decoration: none;
-  height: 40px;
+  height: 35px;
 }
 
 .header-title:hover .logo {
@@ -114,7 +114,7 @@
 /* Mobile Menu Improvements */
 .mobile-menu-overlay {
   position: fixed;
-  top: 70px;
+  top: 50px;
   left: 0;
   width: 100vw;
   height: 100vh;

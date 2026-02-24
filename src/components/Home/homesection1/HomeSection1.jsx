@@ -15,14 +15,14 @@ export default function HomeSection1() {
             conference.
           </p>
           <p className="homesection1-location">
-            Hosted at Brussels School of Governance - Feb 5-8, 2026
+            Hosted at Elevates Offices - Apr 5-8, 2026
           </p>
           <div className="homesection1-buttons">
             <a
               href="/conference-2026"
               className="homesection1-btn homesection1-btn-primary"
             >
-              2026 CONFERENCE
+              NEXT CONFERENCE
             </a>
             <a
               href="/about-us"

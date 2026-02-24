@@ -37,7 +37,7 @@ export default function AboutUsSection3() {
               The Best For Future
             </h2>
             <p className="values-description">
-              BrusselsMUN is built on four core commitments. Everything we do
+              Elevates MUN is built on four core commitments. Everything we do
               comes back to these principles.
             </p>
           </div>
