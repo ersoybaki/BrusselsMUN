@@ -21,7 +21,7 @@
 
 .logo {
   width: auto;
-  height: 35px;
+  height: 45px;
   transition: transform 0.3s ease;
 }
 
@@ -31,7 +31,7 @@
   color: #000;
   transition: opacity 0.3s ease;
   text-decoration: none;
-  height: 35px;
+  height: 45px;
 }
 
 .header-title:hover .logo {

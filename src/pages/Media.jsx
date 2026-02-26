@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar/Navbar.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import ContactSection1 from "../components/Home/homesection9/HomeSection9.jsx";
 import Hero from "../components/Hero/Hero.jsx";
-import HeroImg from "../assets/images/MediaHero.png";
+import HeroImg from "../assets/images/Placeholders/conference2.jpg";
 import MediaSection1 from "../components/Media/MediaSection1/MediaSection1.jsx";
 import MediaSection2 from "../components/Media/MediaSection2/MediaSection2.jsx";
 

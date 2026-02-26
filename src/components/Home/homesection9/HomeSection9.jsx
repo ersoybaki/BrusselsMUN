@@ -110,7 +110,7 @@ const HomeSection9 = () => {
           {/* Left Side - Map */}
           <div className="homesection9-map-container">
             <a
-              href="https://www.google.com/maps/place/Brussels+School+of+Governance+(BSoG)/@50.8216181,4.3912462,287m/data=!3m1!1e3!4m9!1m2!10m1!1e1!3m5!1s0x47c3c4c61e8a39cf:0xa697ab6ddd07a798!8m2!3d50.8213253!4d4.3914686!16s%2Fg%2F1td24l_m?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D"
+              href="https://maps.app.goo.gl/qLedFcpu9f1415JS9"
               target="_blank"
               rel="noopener noreferrer"
               className="homesection9-map-link"
@@ -236,7 +236,7 @@ const HomeSection9 = () => {
         </div>
         <div className="homesection9-social">
           <a
-            href="https://instagram.com/elevates.it"
+            href="https://elevates.it"
             target="_blank"
             rel="noopener noreferrer"
             className="homesection9-social-item"
@@ -255,7 +255,7 @@ const HomeSection9 = () => {
           </a>
 
           <a
-            href="https://instagram.com/elevates.it"
+            href="https://elevates.it"
             target="_blank"
             rel="noopener noreferrer"
             className="homesection9-social-item"
@@ -274,7 +274,7 @@ const HomeSection9 = () => {
           </a>
 
           <a
-            href="https://instagram.com/elevates.it"
+            href="https://elevates.it"
             target="_blank"
             rel="noopener noreferrer"
             className="homesection9-social-item"
@@ -292,10 +292,7 @@ const HomeSection9 = () => {
             </div>
           </a>
 
-          <a
-            href="https://instagram.com/elevates.it"
-            className="homesection9-social-item"
-          >
+          <a href="https://elevates.it" className="homesection9-social-item">
             <svg
               className="homesection9-social-icon"
               viewBox="0 0 24 24"

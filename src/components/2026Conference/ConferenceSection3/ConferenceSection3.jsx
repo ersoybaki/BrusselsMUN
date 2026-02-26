@@ -1,7 +1,7 @@
 import "./ConferenceSection3.css";
-import Conference1 from "../../../assets/images/Conference1.png";
-import Conference2 from "../../../assets/images/Conference2.png";
-import Conference3 from "../../../assets/images/Conference3.png";
+import Conference1 from "../../../assets/images/Placeholders/conference1.jpg";
+import Conference2 from "../../../assets/images/Placeholders/conference2.jpg";
+import Conference3 from "../../../assets/images/Placeholders/conference4.jpg";
 
 const cards = [
   {

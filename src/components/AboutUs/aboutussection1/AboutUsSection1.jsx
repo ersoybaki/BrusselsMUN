@@ -3,8 +3,8 @@ import React, { useRef, useState } from "react";
 import { motion, useMotionValueEvent, useScroll } from "motion/react";
 import "./AboutUsSection1.css";
 import StickyScrollImg1 from "../../../assets/images/StickyScroll1.jpg";
-import StickyScrollImg2 from "../../../assets/images/StickyScroll2.jpg";
-import StickyScrollImg3 from "../../../assets/images/StickyScroll3.JPG";
+import StickyScrollImg2 from "../../../assets/images/Placeholders/aboutus1.jpg";
+import StickyScrollImg3 from "../../../assets/images/Placeholders/aboutus2.jpg";
 
 const content = [
   {

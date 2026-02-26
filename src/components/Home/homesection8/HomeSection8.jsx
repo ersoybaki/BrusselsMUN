@@ -1,13 +1,52 @@
 import { useState, useRef, useEffect } from "react";
 import "./HomeSection8.css";
+import Img1 from "../../../assets/images/Placeholders/homepage1.jpg";
+import Img2 from "../../../assets/images/Placeholders/homepage2.jpg";
+import Img3 from "../../../assets/images/Placeholders/homepage3.jpg";
+import Img4 from "../../../assets/images/Placeholders/homepage4.jpg";
+import Img5 from "../../../assets/images/Placeholders/homepage5.jpg";
+import Img6 from "../../../assets/images/Placeholders/homepage6.jpg";
 
-const req = require.context("../../../assets/images/Marquee", false, /\.jpg$/);
+// const req = require.context("../../../assets/images/Marquee", false, /\.jpg$/);
 
-const galleryImages = Array.from({ length: 25 }, (_, i) => ({
-  id: i + 1,
-  src: req(`./marquee${i + 1}.jpg`),
-  alt: `Gallery image ${i + 1}`,
-}));
+// const galleryImages = Array.from({ length: 25 }, (_, i) => ({
+//   id: i + 1,
+//   src: req(`./marquee${i + 1}.jpg`),
+//   alt: `Gallery image ${i + 1}`,
+// }));
+
+const galleryImages = [
+  {
+    id: 1,
+    src: Img1,
+    alt: "Gallery image 1",
+  },
+  {
+    id: 2,
+    src: Img2,
+    alt: "Gallery image 2",
+  },
+  {
+    id: 3,
+    src: Img3,
+    alt: "Gallery image 3",
+  },
+  {
+    id: 4,
+    src: Img4,
+    alt: "Gallery image 4",
+  },
+  {
+    id: 5,
+    src: Img5,
+    alt: "Gallery image 5",
+  },
+  {
+    id: 6,
+    src: Img6,
+    alt: "Gallery image 6",
+  },
+];
 
 export default function HomeSection8() {
   const [activeIndex, setActiveIndex] = useState(2);

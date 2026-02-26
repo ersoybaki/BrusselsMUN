@@ -1,8 +1,8 @@
 import "./HomeSection6.css";
-import Section6Img1 from "../../../assets/images/Section6Img1.png";
-import Section6Img2 from "../../../assets/images/Section6Img2.png";
-import Section6Img3 from "../../../assets/images/Section6Img3.png";
-import Section6Img4 from "../../../assets/images/Section6Img4.png";
+import Section6Img1 from "../../../assets/images/Placeholders/homepage3.jpg";
+import Section6Img2 from "../../../assets/images/Placeholders/homepage4.jpg";
+import Section6Img3 from "../../../assets/images/Placeholders/homepage5.jpg";
+import Section6Img4 from "../../../assets/images/Placeholders/homepage6.jpg";
 
 const HomeSection6 = () => {
   return (

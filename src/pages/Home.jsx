@@ -12,21 +12,6 @@ import Slider from "../components/2026Conference/ConferenceSection2/ConferenceSe
 import Footer from "../components/Footer/Footer.jsx";
 
 import Elevates from "../assets/images/Partners/Elevates-Icon-White---PNG.png";
-import Logo1 from "../assets/images/Partners/European-Parliament.png";
-import Logo2 from "../assets/images/Partners/GIMUN.png";
-import Logo3 from "../assets/images/Partners/Hertie-School.png";
-import Logo4 from "../assets/images/Partners/JetImport.png";
-import Logo5 from "../assets/images/Partners/Lei-MUN.png";
-import Logo6 from "../assets/images/Partners/Louvain-MUN.png";
-import Logo7 from "../assets/images/Partners/NATO.png";
-import Logo8 from "../assets/images/Partners/Visit-Brussels.png";
-import Logo9 from "../assets/images/Partners/VUBWhite.png";
-import Logo10 from "../assets/images/Partners/Antwerp-MUN.png";
-import Logo11 from "../assets/images/Partners/EuropeanCommissionLogo.png";
-import Logo12 from "../assets/images/Partners/FDNU.png";
-import Logo13 from "../assets/images/Partners/permanent-representation-of-belgium-to-the-european-union.png";
-import Logo14 from "../assets/images/Partners/unnamed.png";
-import Logo15 from "../assets/images/Partners/Ghent-MUN.png";
 
 const sampleLogos = [
   {
@@ -34,64 +19,44 @@ const sampleLogos = [
     alt: "Elevates",
   },
   {
-    src: Logo1,
-    alt: "EU Parliament",
+    src: Elevates,
+    alt: "Elevates",
   },
   {
-    src: Logo2,
-    alt: "GIMUN",
+    src: Elevates,
+    alt: "Elevates",
   },
   {
-    src: Logo3,
-    alt: "Hertie School",
+    src: Elevates,
+    alt: "Elevates",
   },
   {
-    src: Logo4,
-    alt: "JetImport",
+    src: Elevates,
+    alt: "Elevates",
   },
   {
-    src: Logo5,
-    alt: "Lei-MUN",
+    src: Elevates,
+    alt: "Elevates",
   },
   {
-    src: Logo6,
-    alt: "Louvain-MUN",
+    src: Elevates,
+    alt: "Elevates",
   },
   {
-    src: Logo7,
-    alt: "NATO",
+    src: Elevates,
+    alt: "Elevates",
   },
   {
-    src: Logo8,
-    alt: "Visit Brussels",
+    src: Elevates,
+    alt: "Elevates",
   },
   {
-    src: Logo9,
-    alt: "VUB",
+    src: Elevates,
+    alt: "Elevates",
   },
   {
-    src: Logo10,
-    alt: "Antwerp MUN",
-  },
-  {
-    src: Logo11,
-    alt: "European Commission",
-  },
-  {
-    src: Logo12,
-    alt: "FDNU",
-  },
-  {
-    src: Logo13,
-    alt: "Belgium",
-  },
-  {
-    src: Logo14,
-    alt: "Unnamed",
-  },
-  {
-    src: Logo15,
-    alt: "Ghent MUN",
+    src: Elevates,
+    alt: "Elevates",
   },
 ];
 

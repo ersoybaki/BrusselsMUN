@@ -1,5 +1,5 @@
 import "./HomeSection2.css";
-import Image from "../../../assets/images/HomepageSection2.png";
+import Image from "../../../assets/images/Placeholders/homepage2.jpg";
 
 export default function HomeSection2() {
   return (

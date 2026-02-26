@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import Hero from "../components/Hero/Hero.jsx";
-import HeroImg from "../assets/images/AboutUs-TeamPhoto.png";
+import HeroImg from "../assets/images/Placeholders/homepage4.jpg";
 import AboutUsSection1 from "../components/AboutUs/aboutussection1/AboutUsSection1.jsx";
 import AboutUsSection3 from "../components/AboutUs/aboutussection3/AboutUsSection3.jsx";
 import AboutUsSection4 from "../components/AboutUs/aboutussection4/AboutUsSection4.jsx";

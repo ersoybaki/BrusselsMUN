@@ -1,7 +1,7 @@
 import "./ConferenceSection5.css";
-import Conference4 from "../../../assets/images/Conference4.png";
-import Conference5 from "../../../assets/images/Conference5.png";
-import Conference6 from "../../../assets/images/Conference6.png";
+import Conference4 from "../../../assets/images/Placeholders/conference5.jpg";
+import Conference5 from "../../../assets/images/Placeholders/conference6.jpg";
+import Conference6 from "../../../assets/images/Placeholders/conference7.jpg";
 
 export default function ConferenceSection5() {
   return (
@@ -15,7 +15,7 @@ export default function ConferenceSection5() {
           Relive the moments that defined the conference. Witness the intensity
           of the debate
         </p>
-        <a href="" className="conference-section-5__button">
+        <a href="https://elevates.it" className="conference-section-5__button">
           Access Google Drive Photos
         </a>
       </div>
@@ -31,7 +31,7 @@ export default function ConferenceSection5() {
         <div className="conference-section-5__image-wrapper">
           <img
             src={Conference6}
-            alt="Group photo with BSOG letters"
+            alt="Conference group photo"
             className="conference-section-5__image"
           />
         </div>
