@@ -1,10 +1,15 @@
 Options -MultiViews
 RewriteEngine On
 
+# --- Block search engines from indexing ---
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow, noarchive, nosnippet"
+</IfModule>
+
 # Serve existing files/folders as-is
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
-# Otherwise, send everything to index.html
+# Otherwise, send everything to index.html (React Router)
 RewriteRule ^ index.html [L]

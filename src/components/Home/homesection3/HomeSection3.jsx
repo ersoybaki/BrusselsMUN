@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./HomeSection3.css";
-import HomepagePhone from "../../../assets/images/HomepagePhoneMockup.png";
+import HomepagePhone from "../../../assets/images/Placeholders/MockUp.png";
 
 const HomeSection3 = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
